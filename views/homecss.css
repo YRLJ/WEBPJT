@@ -1,0 +1,39 @@
+:root {
+    --purple_web: #8160a7;
+    --black_web: #04080f;
+    --white_web:#fffffc;
+    --grey_web:#c8c8c8;
+}
+
+
+nav {
+    border-color: var(--black_web);
+    border-width: 2px;
+    border-style: solid;
+    background-color: var(--white_web);
+}
+
+.nav-li{
+    color: var(--purple_web);
+}
+
+body, html{
+    background-color: var(--white_web);
+}
+
+.icon{
+    margin-left: 12px;
+    margin-right: 12px;
+    color: var(--purple_web);
+}
+
+.progress-purple{
+    background-color: var(--purple_web);
+}
+
+.btn-purple{
+    background-color: var(--purple_web);
+    color: whitesmoke;
+}
+
+
