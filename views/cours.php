@@ -8,16 +8,7 @@
 
 
 
-    <!-- CSS Navbar -->
-    <link rel="stylesheet" href="./styles/stylenavbar.css">
-    <script src="https://kit.fontawesome.com/4dded3e0b7.js" crossorigin="anonymous"></script>
-
-    <!-- CSS Footer -->
-    <link rel="stylesheet" href="./styles/stylefooter.css">
-
-
-    <!-- CSS page actuel -->
-    <link rel="stylesheet" href="./styles/stylecours.css">
+    
 </head>
 
 <body>
