@@ -8,19 +8,73 @@
 
 
 
-    
+
 </head>
 
 <body>
+
+    <h1>Tous nos cours</h1>
+
+
+
+    <div class="tri row">
+        <div class="col-2"></div>
+        <div class="matieres col-8">
+            <p>Choix de(s) matière(s)</p>
+            <input type="checkbox" id="anglais" name="anglais ">
+            <label for="anglais">Anglais</label>
+
+            <input type="checkbox" id="allemand" name="allemand">
+            <label for="allemand">Allemand</label>
+
+            <input type="checkbox" id="chinois" name="chinois">
+            <label for="chinois">Chinois</label>
+
+            <input type="checkbox" id="chimie" name="chimie">
+            <label for="Chimie">Chimie</label>
+
+            <input type="checkbox" id="mathématiques" name="mathématiques">
+            <label for="mathématiques">Mathématiques</label>
+
+            <input type="checkbox" id="web" name="web">
+            <label for="web">WEB</label>
+
+            <input type="checkbox" id="reseaux" name="reseaux">
+            <label for="reseaux">Réseaux</label>
+
+            <input type="checkbox" id="java" name="java">
+            <label for="java">JAVA</label>
+
+            <input type="checkbox" id="cc++" name="cc++">
+            <label for="cc++">C/C++</label>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2 col-lg-4"></div>
+        <div class="col-8 col-lg-4">
+            <p>Choix de l'ordre</p>
+            <select class="custom-select custom-select-sm">
+                <option selected>Tri aléatoire</option>
+                <option value="1">Trier par : notes croissantes</option>
+                <option value="2">Trier par : notes décroissantes</option>
+                <option value="3">Trier par : les plus récentes</option>
+                <option value="4">Trier par : les plus anciennes</option>
+            </select>
+        </div>
+        <div class="col-2 col-lg-4"></div>
+    </div>
+
+
+
+
 
     <div class="touslescours">
         <a href="">
             <div class="cours row">
                 <div class="col-8" id="titre">
-                    <h3>Cours de proba</h3>
+                    <h3>Titre Cours</h3>
                 </div>
                 <div class="col-4" id="note">
-                    <p>Appréciations des élève (note sur 10 ou étoiles sur 5)</p>
+                    <p>Appréciations des élèves (note sur 10 ou étoiles sur 5)</p>
                 </div>
                 <div class="col-4" id="duree">
                     <p>Durée approximative</p>
@@ -49,7 +103,7 @@
         <a href="">
             <div class="cours row">
                 <div class="col-8" id="titre">
-                    <h3>Cours sur les molécules/h3>
+                    <h3>Cours sur les molécules</h3>
                 </div>
                 <div class="col-4" id="note">
                     <p>7.5/10</p>

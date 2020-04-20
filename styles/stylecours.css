@@ -1,3 +1,7 @@
+body h1 {
+    text-align: center;
+}
+
 div.touslescours {
     width: 100%;
 }
@@ -38,4 +42,12 @@ div a div {
 
 div.touslescours div#note {
     text-align: right;
+}
+
+div.tri div p {
+    text-align: center;
+}
+
+div.tri div.matieres {
+    text-align: center;
 }
