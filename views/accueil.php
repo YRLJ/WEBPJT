@@ -12,7 +12,9 @@
 </head>
 
 <body>
-   tets
+    <div class="container text-center">
+        <h1>Bienvenue sur notre platfo</h1>
+    </div>
 </body>
 
 </html>
