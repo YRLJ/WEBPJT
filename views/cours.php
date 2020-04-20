@@ -27,6 +27,7 @@
 
 
 <a class="btn-grad">Proposer cours</a>
+<a></a>
 
     <?php include_once "./models/footer.php"; ?>
 </body>
