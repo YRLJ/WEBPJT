@@ -1,0 +1,32 @@
+footer {
+    /*footer tout en entier*/
+    background-color: var(--black_web);
+    color: var(--white_web);
+}
+
+footer div div ul li {
+    /*On enleve les puces des colonnes*/
+    list-style-type: none;
+}
+
+footer div div ul li a {
+    /*On modifie la couleur des liens et on regle leur taille*/
+    color: var(--grey_web);
+    font-size: 1em;
+}
+
+footer div div ul li a:hover {
+    /*On modifie la couleur des liens quand ils sont survolé et on enleve les decorations*/
+    color: var(--purple_web);
+    text-decoration: none;
+}
+
+footer div div ul li a img {
+    width: 25px;
+    padding-right: 1%;
+}
+
+#first {
+    font-size: 22px;
+    color: var(--white_web);
+}
