@@ -1,7 +1,41 @@
-.btn-grad {
-    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%)
+div.touslescours {
+    width: 100%;
 }
 
-.btn-grad:hover {
-    background-position: right center;
+div a {
+    text-decoration: none;
+    color: var(--black_web);
+}
+
+div a:hover {
+    text-decoration: none;
+    color: var(--black-web);
+    border-color: var(--purple_web);
+}
+
+div div.cours {
+    border: solid;
+    border-width: 5px;
+    border-color: var(--black_web);
+    margin: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+div.cours h3 {
+    text-align: left;
+}
+
+div div.cours:hover {
+    border-color: var(--purple_web);
+}
+
+div a div {
+    color: var(--black_web);
+    text-decoration: none;
+    padding: 3px;
+}
+
+div.touslescours div#note {
+    text-align: right;
 }
