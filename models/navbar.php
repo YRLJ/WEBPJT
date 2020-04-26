@@ -27,7 +27,7 @@
                 <a href="index.php?page=cours"><i class="fas fa-book-open icon fa-lg"></i></a>
             </li>
             <li class="nav-item">
-                <a href=""><i class="fas fa-user-circle icon fa-lg"></i></a>
+                <a href="index.php?page=login"><i class="fas fa-user-circle icon fa-lg"></i></a>
             </li>
         </ul>
     </nav>

@@ -11,7 +11,12 @@ if(isset($_GET['page'])){
     if($_GET['page'] == 'ajouter'){
         include_once 'views/create_course.php';
     }
-
+    if($_GET['page'] == 'login'){
+        include_once './views/login.php';
+    }
+    if($_GET['page'] == 'signup'){
+        include_once './views/signup.php';
+    }
 }
 else{
     include_once "views/accueil.php";

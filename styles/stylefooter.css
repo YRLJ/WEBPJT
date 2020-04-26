@@ -2,6 +2,7 @@ footer {
     /*footer tout en entier*/
     background-color: var(--black_web);
     color: var(--white_web);
+    overflow: hidden;
 }
 
 footer div div ul li {
