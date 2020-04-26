@@ -12,7 +12,7 @@ if (isset($_GET['page'])) {
         include_once 'views/create_course.php';
     }
     if ($_GET['page'] == 'login') {
-        if ($_SESSION['connected'] == true) {
+        if ( isset($_SESSION['type']) && ($_SESSION['type'] == "admin" ||$_SESSION['type'] == "user")) {
             include_once './views/myaccount.php';
         } else {
             include_once './views/login.php';
@@ -22,7 +22,7 @@ if (isset($_GET['page'])) {
         include_once './views/logout.php';
     }
     if ($_GET['page'] == 'signup') {
-        if ($_SESSION['connected'] == true) {
+        if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" ||$_SESSION['type'] == "user")) {
             include_once './views/myaccount.php';
         } else {
             include_once './views/signup.php';
