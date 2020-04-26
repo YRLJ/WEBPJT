@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
 </head>
 
 <body>
@@ -26,6 +26,10 @@
             <li class="nav-item">
                 <a href="index.php?page=cours"><i class="fas fa-book-open icon fa-lg"></i></a>
             </li>
+            <?php if ($_SESSION['connected'] == true) {
+                echo "<li class=\"nav-item\"><a href=\"index.php?page=logout\"><i class=\"fas fa-sign-out-alt\"></i></i></a></li>";
+            } ?>
+
             <li class="nav-item">
                 <a href="index.php?page=login"><i class="fas fa-user-circle icon fa-lg"></i></a>
             </li>
