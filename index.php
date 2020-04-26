@@ -5,6 +5,9 @@ include_once 'models/header.php';
 include_once('models/navbar.php');
 
 if (isset($_GET['page'])) {
+    if($_GET['page'] == 'createquiz'){
+        include_once 'views/quizcreator.php';
+    }
     if ($_GET['page'] == 'cours') {
         include_once "views/cours.php";
     }
