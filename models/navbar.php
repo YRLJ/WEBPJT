@@ -26,7 +26,7 @@
             <li class="nav-item">
                 <a href="index.php?page=cours"><i class="fas fa-book-open icon fa-lg"></i></a>
             </li>
-            <?php if ($_SESSION['connected'] == true) {
+            <?php if (isset($_SESSION['type']) && ( $_SESSION['type']=="admin" || $_SESSION['type']=="user" )  ) {
                 echo "<li class=\"nav-item\"><a href=\"index.php?page=logout\"><i class=\"fas fa-sign-out-alt\"></i></i></a></li>";
             } ?>
 

@@ -33,17 +33,15 @@ class Bdd
         return $resultat;
     }
 
-    public function creatAccount($lastname, $firstname, $username,  $password , $type)
+    public function creatAccount($lastname, $firstname, $username,  $password, $type)
     {
         $sql = 'INSERT INTO users (username, lastname, firstname,  password, type) 
-        VALUES (:username, :lastname, :firstname,  :password)';
+        VALUES (:username, :lastname, :firstname,  :password, :type)';
         $test = $this->connexion->prepare($sql);
         $test->execute([
-            ':username' => $username, ':lastname' => $lastname, ':firstname' => $firstname, 
-             ':password' => $password, ':type'=>$type
+            ':username' => $username, ':lastname' => $lastname, ':firstname' => $firstname,
+            ':password' => $password, ':type' => $type
         ]);
         echo "le compte vient d'être créé";
     }
-
-
 }
