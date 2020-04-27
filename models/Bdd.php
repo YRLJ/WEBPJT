@@ -8,7 +8,7 @@ class Bdd
     public function __construct()
     {
         try {
-            $this->connexion = new PDO('mysql:host=localhost:8889;dbname=webpjt;charset=utf8', 'root', 'root');
+            $this->connexion = new PDO('mysql:host=localhost;dbname=webpjt;charset=utf8', 'root', 'root');
         } catch (PDOException $Exception) {
             echo "Erreur de connexion à la base de donnée";
             exit;
