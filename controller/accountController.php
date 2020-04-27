@@ -25,9 +25,9 @@ function connexion()
 
 function creatAccount()
 {
-    if (isset($_POST['lastname']) && isset($_POST['firstname']) && isset($_POST['username']) && isset($_POST['mail']) && isset($_POST['password'])) {
+    if (isset($_POST['lastname']) && isset($_POST['firstname']) && isset($_POST['username']) && isset($_POST['password'])) {
         $Bdd = new Bdd();
-        $Bdd->creatAccount($_POST['lastname'], $_POST['firstname'], $_POST['username'], $_POST['mail'], $_POST['password']);
+        $Bdd->creatAccount($_POST['lastname'], $_POST['firstname'], $_POST['username'], $_POST['password'], 'user');
         header('location: ../WEBPJT/index.php?page=login');
     }
 }
