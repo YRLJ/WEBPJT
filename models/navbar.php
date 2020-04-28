@@ -3,37 +3,28 @@
 
 <head>
 
+    <script src="https://kit.fontawesome.com/4dded3e0b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/stylenavbar.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="index.php"><img src="./images/logoweb.svg"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php?page=ajouter"><i class="fas fa-plus-square"></i> <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+    <nav class="navbar">
+        <a href="index.php" class="brand-title"><img height="35" witdh="11.7" src="logo.svg"></a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.php?page=cours" title="Cours"><i class="fas fa-book-open fa-2x"></i></a></li>
+                <?php if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
+                    echo "<li><a href=\"index.php?page=logout\" title=\"Se déconnecter\"><i class=\"fas fa-sign-out-alt fa-2x\"></i></a></li>";
+                    echo "<li><a href=\"index.php?page=login\" title=\"Mon compte\"><i class=\"fas fa-user fa-2x\"></i></a></li>";
+                }
+                else{
+                    echo "<li><a href=\"index.php?page=login\" title=\"Se connecter\"><i class=\"fas fa-user fa-2x\"></i></a></li>";
+                } ?>
             </ul>
         </div>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="index.php?page=cours"><i class="fas fa-book-open icon fa-lg"></i></a>
-            </li>
-            <?php if (isset($_SESSION['type']) && ( $_SESSION['type']=="admin" || $_SESSION['type']=="user" )  ) {
-                echo "<li class=\"nav-item\"><a href=\"index.php?page=logout\"><i class=\"fas fa-sign-out-alt\"></i></i></a></li>";
-            } ?>
-
-            <li class="nav-item">
-                <a href="index.php?page=login"><i class="fas fa-user-circle icon fa-lg"></i></a>
-            </li>
-        </ul>
     </nav>
 </body>
 
