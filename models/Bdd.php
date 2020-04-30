@@ -44,4 +44,12 @@ class Bdd
         ]);
         echo "le compte vient d'être créé";
     }
+
+    public function getCourses(){
+        $sql = 'SELECT * FROM courses';
+        $var = $this->connexion->prepare(($sql));
+        $var->execute();
+        $courses=$var->fetchAll(PDO::FETCH_ASSOC);
+        return $courses;
+    }
 }
