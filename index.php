@@ -6,20 +6,20 @@ include_once './models/loader.php';
 include_once './models/navbar.php';
 
 if (isset($_GET['page'])) {
-    if($_GET['page'] == 'createquiz'){
+    if ($_GET['page'] == 'createquiz') {
         include_once 'views/quizcreator.php';
     }
     if ($_GET['page'] == 'cours') {
         include_once "views/cours.php";
     }
-    if($_GET['page'] == 'coursdisplay'){
+    if ($_GET['page'] == 'coursdisplay') {
         include_once "views/coursedisplay.php";
     }
     if ($_GET['page'] == 'ajouter') {
         include_once 'views/create_course.php';
     }
     if ($_GET['page'] == 'login') {
-        if ( isset($_SESSION['type']) && ($_SESSION['type'] == "admin" ||$_SESSION['type'] == "user")) {
+        if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
             include_once './views/myaccount.php';
         } else {
             include_once './views/login.php';
@@ -29,7 +29,7 @@ if (isset($_GET['page'])) {
         include_once './views/logout.php';
     }
     if ($_GET['page'] == 'signup') {
-        if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" ||$_SESSION['type'] == "user")) {
+        if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
             include_once './views/myaccount.php';
         } else {
             include_once './views/signup.php';
@@ -39,11 +39,11 @@ if (isset($_GET['page'])) {
         include_once './controller/accountController.php';
         connexion();
     }
-    if($_GET['page'] == "creatAccount"){
+    if ($_GET['page'] == "creatAccount") {
         include_once './controller/accountController.php';
         creatAccount();
     }
-    if($_GET['page'] == "proposercours"){
+    if ($_GET['page'] == "proposercours") {
         include_once './views/proposer_cours.php';
     }
 } else {
