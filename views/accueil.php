@@ -20,15 +20,10 @@
         echo "<div class=\"titre\">
         <h1>Bienvenue sur notre plateforme</h1>
         <p>Notre but et notre volonté est de donner l'accés à tous les cours à tous types de personnes.</p>
-<<<<<<< HEAD
     </div>";
     }
     ?>
 
-=======
-    </div>
-    <div>coucou</div>
->>>>>>> bf675ff2d3b6947a4793f033051dd8f3f9d663f1
 
 
 </body>
