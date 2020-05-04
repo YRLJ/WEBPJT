@@ -2,6 +2,10 @@ body h1 {
     text-align: center;
 }
 
+body {
+    overflow: hidden;
+}
+
 div.touslescours {
     width: 100%;
 }
@@ -42,6 +46,10 @@ div a div {
 
 div.touslescours div#note {
     text-align: right;
+}
+
+div.tri {
+    overflow: hidden;
 }
 
 div.tri div p {

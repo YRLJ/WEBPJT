@@ -19,39 +19,3 @@
         color: #fff;
         padding: 10%;
     }
-    
-    .banner {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-    
-    .banner img {
-        position: absolute;
-        top: -50px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .banner .content {
-        position: relative;
-        max-width: 750px;
-        text-align: center;
-    }
-    
-    .banner .content h2 {
-        color: #fff;
-        font-size: 60px;
-    }
-    
-    .banner .content p {
-        color: #fff;
-        font-size: 18px;
-        z-index: -1;
-    }
