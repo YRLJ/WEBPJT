@@ -11,3 +11,14 @@ function getAllCourses(){
 }
 
 
+function getAllIdAccountCourses(){
+    $Bdd = new Bdd();
+    $idcourses = $Bdd->getAccountIdCourses($_SESSION['username']);
+    return $idcourses;
+}
+
+function getCourseWithId($idcourse){
+    $Bdd = new Bdd();
+    $course = $Bdd->getCourseWithId($idcourse);
+    return $course;
+}

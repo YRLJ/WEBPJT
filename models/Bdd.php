@@ -52,4 +52,24 @@ class Bdd
         $courses=$var->fetchAll(PDO::FETCH_ASSOC);
         return $courses;
     }
+
+    public function getAccountIdCourses($username){
+        $sql = 'SELECT courseid FROM usercourses WHERE username = :username';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([
+            ':username' => $username
+        ]);
+        $idcourses=$var->fetchAll(PDO::FETCH_ASSOC);
+        return $idcourses;
+    }
+
+    public function getCourseWithId($courseid){
+        $sql = 'SELECT * FROM courses WHERE courseid = :courseid';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([
+            ':courseid' => $courseid
+        ]);
+        $course=$var->fetch(PDO::FETCH_ASSOC);
+        return $course;
+    }
 }
