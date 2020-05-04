@@ -52,4 +52,12 @@ class Bdd
         $courses=$var->fetchAll(PDO::FETCH_ASSOC);
         return $courses;
     }
+
+    public function getCourseById($id){
+        $sql = 'SELECT * FROM courses where courseid = :id';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":id"=>$id]);
+        $course = $var->fetchAll(PDO::FETCH_ASSOC);
+        return $course;
+    }
 }

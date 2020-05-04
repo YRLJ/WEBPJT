@@ -81,7 +81,7 @@
     if ($courses != null) {
         echo "<div class=\"touslescours\">";
         foreach ($courses as $course) {
-            echo "<a href=\"\">
+            echo "<a href=\"index.php?page=coursdisplay&id=".$course["courseid"]."\">
         <div class=\"cours row\">
             <div class=\"col-8\" id=\"titre\">
                 <h3>" . $course['title'] . "</h3>
