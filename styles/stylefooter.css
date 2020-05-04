@@ -1,9 +1,13 @@
+html , body {
+    height: 100%;
+}
+
 footer {
     /*footer tout en entier*/
     background-color: var(--black_web);
     color: var(--white_web);
     overflow: hidden;
-    position: relative;
+    position: absolute;
         width: 100%;
     bottom: 0;
 }
