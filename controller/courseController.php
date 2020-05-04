@@ -25,6 +25,6 @@ function getAllIdAccountCourses(){
 
 function getCourseWithId($idcourse){
     $Bdd = new Bdd();
-    $course = $Bdd->getCourseWithId($idcourse);
+    $course = $Bdd->getCourseById($idcourse);
     return $course;
 }

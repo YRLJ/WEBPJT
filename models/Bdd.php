@@ -53,11 +53,19 @@ class Bdd
         return $courses;
     }
 
+    public function getAccountIdCourses($username){
+        $sql = 'SELECT courseid FROM usercourses WHERE username = :username';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":username"=>$username]);
+        $idcourses = $var->fetchAll(PDO::FETCH_ASSOC);
+        return $idcourses;
+    }
+
     public function getCourseById($id){
         $sql = 'SELECT * FROM courses where courseid = :id';
         $var = $this->connexion->prepare($sql);
         $var->execute([":id"=>$id]);
-        $course = $var->fetchAll(PDO::FETCH_ASSOC);
+        $course = $var->fetch(PDO::FETCH_ASSOC);
         return $course;
     }
 }

@@ -26,7 +26,7 @@
     $idcourses=getAllIdAccountCourses();
     echo "<div class=\"touslescours\">";
     foreach($idcourses as $idcourse){
-        $course=getCourseWithId($idcourse['courseid']);
+        $course=getCourseById($idcourse['courseid']);
         echo "<a href=\"\">
         <div class=\"cours row\">
             <div class=\"col-8\" id=\"titre\">
