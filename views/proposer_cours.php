@@ -30,19 +30,19 @@
                 <label for="image">Image ?</label>
                 <input type="checkbox" name="image" id="image">
                 <div id="images" style="visibility:hidden">
-                    <input name="images[]" type="file" multiple />
+                    <input name="images" type="file"  />
                 </div>
 
                 <label for="image">Vidéo ?</label>
                 <input type="checkbox" name="video" id="video">
                 <div id="video_data" style="visibility:hidden">
-                    <input type="file" name="video_data" multiple>
+                    <input type="file" name="video_data">
                 </div>
 
                 <label for="image">PDF ?</label>
                 <input type="checkbox" name="pdf" id="pdf">
                 <div id="pdf_data" style="visibility:hidden">
-                    <input type="file" name="video_data" multiple>
+                    <input type="file" name="pdf_data" >
                 </div>
 
                 <input type="checkbox" id="check" />

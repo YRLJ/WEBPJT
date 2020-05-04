@@ -72,7 +72,7 @@ div.tri div.matieres {
     outline: none;
     cursor: pointer;
     transition: 0s;
-    border-radius: 15px;
+    border-radius: 8px;
     position: relative;
     left: 50%;
     transform: translate(-65px, 0px);

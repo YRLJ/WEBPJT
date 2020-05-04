@@ -10,6 +10,12 @@ function getAllCourses(){
     return $courses;
 }
 
+function getCourseById($id){
+    $Bdd = new Bdd();
+    $courses = $Bdd->getCourseById($id);
+    return $courses;
+}
+
 
 function getAllIdAccountCourses(){
     $Bdd = new Bdd();

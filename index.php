@@ -12,6 +12,9 @@ if (isset($_GET['page'])) {
     if ($_GET['page'] == 'cours') {
         include_once "views/cours.php";
     }
+    if($_GET['page'] == 'coursdisplay'){
+        include_once "views/coursedisplay.php";
+    }
     if ($_GET['page'] == 'ajouter') {
         include_once 'views/create_course.php';
     }
