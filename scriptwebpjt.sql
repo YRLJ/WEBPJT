@@ -12,7 +12,8 @@ CREATE TABLE courses(
         subject  Varchar (100) NOT NULL ,
         title    Varchar (1000) NOT NULL ,
         content  Varchar (2000) NOT NULL ,
-        url      Varchar (2000) NOT NULL
+        url      Varchar (2000) NOT NULL,
+        valide   Varchar (10) NOT NULL
 	,CONSTRAINT courses_PK PRIMARY KEY (courseid)
 )ENGINE=InnoDB;
 
