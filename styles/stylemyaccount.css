@@ -1,0 +1,61 @@
+body h1 {
+    text-align: center;
+}
+
+body {
+    overflow: hidden;
+}
+
+div.touslescours {
+    width: 100%;
+}
+
+div a {
+    text-decoration: none;
+    color: var(--black_web);
+}
+
+div a:hover {
+    text-decoration: none;
+    color: var(--black-web);
+    border-color: var(--purple_web);
+}
+
+div div.cours {
+    border: solid;
+    border-width: 5px;
+    border-color: var(--black_web);
+    margin: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+div.cours h3 {
+    text-align: left;
+}
+
+div div.cours:hover {
+    border-color: var(--purple_web);
+}
+
+div a div {
+    color: var(--black_web);
+    text-decoration: none;
+    padding: 3px;
+}
+
+div.touslescours div#note {
+    text-align: right;
+}
+
+div.tri {
+    overflow: hidden;
+}
+
+div.tri div p {
+    text-align: center;
+}
+
+div.tri div.matieres {
+    text-align: center;
+}

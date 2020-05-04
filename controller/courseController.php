@@ -17,3 +17,14 @@ function getCourseById($id){
 }
 
 
+function getAllIdAccountCourses(){
+    $Bdd = new Bdd();
+    $idcourses = $Bdd->getAccountIdCourses($_SESSION['username']);
+    return $idcourses;
+}
+
+function getCourseWithId($idcourse){
+    $Bdd = new Bdd();
+    $course = $Bdd->getCourseById($idcourse);
+    return $course;
+}
