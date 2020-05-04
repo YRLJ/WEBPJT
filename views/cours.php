@@ -13,7 +13,7 @@
 
 
 <body>
-<br><br><br>
+    <br><br><br>
 
     <?php
     if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
@@ -81,22 +81,24 @@
     if ($courses != null) {
         echo "<div class=\"touslescours\">";
         foreach ($courses as $course) {
-            echo "<a href=\"index.php?page=coursdisplay&id=".$course["courseid"]."\">
-        <div class=\"cours row\">
-            <div class=\"col-8\" id=\"titre\">
-                <h3>" . $course['title'] . "</h3>
-            </div>
-            <div class=\"col-4\" id=\"note\">
-                <p>Appréciations des élèves (note sur 10 ou étoiles sur 5)</p>
-            </div>
-            <div class=\"col-4\" id=\"duree\">
-                <p>Durée approximative</p>
-            </div>
-            <div class=\"col-8\" id=\"resume\">
-                <p>" . $course['subject'] . "</p>
-            </div>
-        </div>
-    </a>";
+            if ($course['valide'] == 'oui') {
+                echo "<a href=\"index.php?page=coursdisplay&id=" . $course["courseid"] . "\">
+                <div class=\"cours row\">
+                    <div class=\"col-8\" id=\"titre\">
+                        <h3>" . $course['title'] . "</h3>
+                    </div>
+                    <div class=\"col-4\" id=\"note\">
+                        <p>Appréciations des élèves (note sur 10 ou étoiles sur 5)</p>
+                    </div>
+                    <div class=\"col-4\" id=\"duree\">
+                        <p>Durée approximative</p>
+                    </div>
+                    <div class=\"col-8\" id=\"resume\">
+                        <p>" . $course['subject'] . "</p>
+                    </div>
+                </div>
+            </a>";
+            }
         }
         echo "</div>";
     } else {

@@ -1,3 +1,24 @@
-h1 {
+body h1 {
     text-align: center;
+}
+
+div.cours {
+    border: solid 3px black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+div.cours a {
+    background: linear-gradient(120deg, #3498DB, #8E44AD);
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    left: 50%;
+}
+
+div.cours a:hover {
+    background: linear-gradient(120deg, #8E44AD, #3498DB);
 }

@@ -27,22 +27,25 @@
     echo "<div class=\"touslescours\">";
     foreach($idcourses as $idcourse){
         $course=getCourseById($idcourse['courseid']);
-        echo "<a href=\"\">
-        <div class=\"cours row\">
-            <div class=\"col-8\" id=\"titre\">
-                <h3>" . $course['title'] . "</h3>
+        if($course['valide']=="oui"){
+            echo "<a href=\"\">
+            <div class=\"cours row\">
+                <div class=\"col-8\" id=\"titre\">
+                    <h3>" . $course['title'] . "</h3>
+                </div>
+                <div class=\"col-4\" id=\"note\">
+                    <p>Appréciations des élèves (note sur 10 ou étoiles sur 5)</p>
+                </div>
+                <div class=\"col-4\" id=\"duree\">
+                    <p>Durée approximative</p>
+                </div>
+                <div class=\"col-8\" id=\"resume\">
+                    <p>" . $course['subject'] . "</p>
+                </div>
             </div>
-            <div class=\"col-4\" id=\"note\">
-                <p>Appréciations des élèves (note sur 10 ou étoiles sur 5)</p>
-            </div>
-            <div class=\"col-4\" id=\"duree\">
-                <p>Durée approximative</p>
-            </div>
-            <div class=\"col-8\" id=\"resume\">
-                <p>" . $course['subject'] . "</p>
-            </div>
-        </div>
-    </a>";
+        </a>";
+        }
+        
     }
     echo "</div>";
 

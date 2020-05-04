@@ -62,6 +62,16 @@ if (isset($_GET['page'])) {
                 include_once './views/administrateur.php';
             }
             break;
+
+        case "deletecourse":
+            include_once './controller/courseController.php';
+            deleteCourse();
+            break;
+
+        case "validecourse":
+            include_once './controller/courseController.php';
+            valideCourse();
+            break;
     }
 
     /*
