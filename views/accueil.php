@@ -2,19 +2,23 @@
 <html lang="en">
 
 <head>
-   
+
     <title>Nom - Accueil</title>
+    <link rel="stylesheet" href="./styles/styleaccueil.css">
 
-    <!-- Bootstrap CSS -->
-    
 
-    <link rel="stylesheet" href="./styles/stylefooter.css">
+
 </head>
 
 <body>
-    <div class="container text-center">
-        <h1>Bienvenue sur notre platfo</h1>
+
+    <div class="titre">
+        <h1>Bienvenue sur notre plateforme</h1>
+        <p>Notre but et notre volonté est de donner l'accés à tous les cours à tous types de personnes.</p>
     </div>
+
+
+
 </body>
 
 </html>

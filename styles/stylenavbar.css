@@ -20,6 +20,8 @@ body {
     align-items: center;
     background-color: transparent;
     color: black;
+    position: relative;
+    z-index: 1;
 }
 
 .brand-title {

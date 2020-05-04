@@ -51,3 +51,27 @@ div.tri div p {
 div.tri div.matieres {
     text-align: center;
 }
+
+.logbtn {
+    display: block;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498DB, #8E44AD, #3498DB);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0s;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    transform: translate(-65px, 0px);
+}
+
+.logbtn:hover {
+    background-position: right;
+    color: #fff;
+    text-decoration: none;
+}

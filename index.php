@@ -40,6 +40,9 @@ if (isset($_GET['page'])) {
         include_once './controller/accountController.php';
         creatAccount();
     }
+    if($_GET['page'] == "proposercours"){
+        include_once './views/proposer_cours.php';
+    }
 } else {
     include_once "views/accueil.php";
 }

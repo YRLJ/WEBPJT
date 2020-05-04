@@ -1,0 +1,57 @@
+    body {
+        background: url(../images/accueil/1.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .navbar-links li a {
+        color: #fff !important;
+    }
+    
+    .navbar-links li a:hover {
+        color: #8160a7 !important;
+    }
+    
+    .titre {
+        text-align: center;
+        color: #fff;
+        padding: 10%;
+    }
+    
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .banner img {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .banner .content {
+        position: relative;
+        max-width: 750px;
+        text-align: center;
+    }
+    
+    .banner .content h2 {
+        color: #fff;
+        font-size: 60px;
+    }
+    
+    .banner .content p {
+        color: #fff;
+        font-size: 18px;
+        z-index: -1;
+    }
