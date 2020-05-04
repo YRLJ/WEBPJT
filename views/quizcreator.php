@@ -156,10 +156,10 @@
         getDataBtn.addEventListener('click', () => {
             const data = getData('json');
             console.log(data);
-            $.post("./views/quizcreator.php",() => {
+           /* $.post("./views/quizcreator.php",() => {
                 console.log(data);
 
-            });
+            });*/
         })
     </script>
     <?php

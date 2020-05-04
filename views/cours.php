@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nom - Cours</title>
-
-
-
-
+    <link rel="stylesheet" href="./styles/stylecours.css">
 </head>
 
+
+
+
+
 <body>
+<br><br><br>
+
+    <?php
+    if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
+        echo "<a href=\"index.php?page=proposercours\" class=\"logbtn\">Proposer un cours</a>";
+    } else {
+        echo "<a href=\"index.php?page=login\" class=\"logbtn\">Proposer un cours</a>";
+    }
+    ?>
+    <br><br><br>
 
     <h1>Tous nos cours</h1>
-
-
 
     <div class="tri row">
         <div class="col-2"></div>
@@ -64,8 +73,40 @@
     </div>
 
 
+    <?php
+
+    include_once './controller/courseController.php';
+    $courses = getAllCourses();
+
+    if ($courses != null) {
+        echo "<div class=\"touslescours\">";
+        foreach ($courses as $course) {
+            echo "<a href=\"index.php?page=coursdisplay&id=".$course["courseid"]."\">
+        <div class=\"cours row\">
+            <div class=\"col-8\" id=\"titre\">
+                <h3>" . $course['title'] . "</h3>
+            </div>
+            <div class=\"col-4\" id=\"note\">
+                <p>Appréciations des élèves (note sur 10 ou étoiles sur 5)</p>
+            </div>
+            <div class=\"col-4\" id=\"duree\">
+                <p>Durée approximative</p>
+            </div>
+            <div class=\"col-8\" id=\"resume\">
+                <p>" . $course['subject'] . "</p>
+            </div>
+        </div>
+    </a>";
+        }
+        echo "</div>";
+    } else {
+        echo "désole vous n'avez pas de cours dans votre BDD";
+    }
+
+    ?>
 
 
+    <!--
 
     <div class="touslescours">
         <a href="">
@@ -167,7 +208,7 @@
 
 
     </div>
-
+-->
 </body>
 
 </html>

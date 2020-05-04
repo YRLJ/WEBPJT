@@ -28,11 +28,6 @@
         </div>
 
         <div class="txtb">
-            <input type="mail" name="mail" required="true">
-            <span data-placeholder="E-mail"></span>
-        </div>
-
-        <div class="txtb">
             <input type="password" name="password" required="true">
             <span data-placeholder="Mot de passe"></span>
         </div>

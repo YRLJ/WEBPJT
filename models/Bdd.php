@@ -8,7 +8,7 @@ class Bdd
     public function __construct()
     {
         try {
-            $this->connexion = new PDO('mysql:host=localhost:8889;dbname=webpjt;charset=utf8', 'root', 'root');
+            $this->connexion = new PDO('mysql:host=localhost;dbname=webpjt;charset=utf8', 'root', 'root');
         } catch (PDOException $Exception) {
             echo "Erreur de connexion à la base de donnée";
             exit;
@@ -33,17 +33,31 @@ class Bdd
         return $resultat;
     }
 
-    public function creatAccount($lastname, $firstname, $username,  $password , $type)
+    public function creatAccount($lastname, $firstname, $username,  $password, $type)
     {
         $sql = 'INSERT INTO users (username, lastname, firstname,  password, type) 
-        VALUES (:username, :lastname, :firstname,  :password)';
+        VALUES (:username, :lastname, :firstname,  :password, :type)';
         $test = $this->connexion->prepare($sql);
         $test->execute([
-            ':username' => $username, ':lastname' => $lastname, ':firstname' => $firstname, 
-             ':password' => $password, ':type'=>$type
+            ':username' => $username, ':lastname' => $lastname, ':firstname' => $firstname,
+            ':password' => $password, ':type' => $type
         ]);
         echo "le compte vient d'être créé";
     }
 
+    public function getCourses(){
+        $sql = 'SELECT * FROM courses';
+        $var = $this->connexion->prepare(($sql));
+        $var->execute();
+        $courses=$var->fetchAll(PDO::FETCH_ASSOC);
+        return $courses;
+    }
 
+    public function getCourseById($id){
+        $sql = 'SELECT * FROM courses where courseid = :id';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":id"=>$id]);
+        $course = $var->fetchAll(PDO::FETCH_ASSOC);
+        return $course;
+    }
 }

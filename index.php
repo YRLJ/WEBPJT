@@ -1,8 +1,9 @@
 <?php
 
 session_start();
-include_once 'models/header.php';
-include_once('models/navbar.php');
+include_once './models/header.php';
+include_once './models/loader.php';
+include_once './models/navbar.php';
 
 if (isset($_GET['page'])) {
     if($_GET['page'] == 'createquiz'){
@@ -10,6 +11,9 @@ if (isset($_GET['page'])) {
     }
     if ($_GET['page'] == 'cours') {
         include_once "views/cours.php";
+    }
+    if($_GET['page'] == 'coursdisplay'){
+        include_once "views/coursedisplay.php";
     }
     if ($_GET['page'] == 'ajouter') {
         include_once 'views/create_course.php';
@@ -38,6 +42,9 @@ if (isset($_GET['page'])) {
     if($_GET['page'] == "creatAccount"){
         include_once './controller/accountController.php';
         creatAccount();
+    }
+    if($_GET['page'] == "proposercours"){
+        include_once './views/proposer_cours.php';
     }
 } else {
     include_once "views/accueil.php";

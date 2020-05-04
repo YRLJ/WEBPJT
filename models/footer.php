@@ -23,8 +23,14 @@
     <div class="col-sm-6 col-lg-3">
         <ul>
             <li id="first">Compte</li>
-            <li><a href="">Mes cours</a></li>
-            <li><a href="">Mes notes ?</a></li>
+            <?php if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
+                        echo "<li><a href=\"index.php?page=proposercours\">Proposer un cours</a></li>";
+                        echo "<li><a href=\"index.php?page=login\">Mes informations</a></li>";
+                        echo "<li><a href=\"index.php?page=logout\">Se déconnecter</a></li>";
+
+                    } else {
+                        echo "<li><a href=\"index.php?page=login\">Se connecter</a></li>";
+                    } ?>
         </ul>
     </div>
     <div class="col-sm-6 col-lg-3">

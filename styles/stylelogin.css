@@ -9,6 +9,11 @@ body {
     background-image: linear-gradient(120deg, #3498db, #8e44AD);
 }
 
+footer {
+    position: relative !important;
+    padding: 20px;
+}
+
 section.form-login {
     position: relative;
     padding-bottom: 800px;

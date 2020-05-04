@@ -3,6 +3,9 @@ footer {
     background-color: var(--black_web);
     color: var(--white_web);
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer div div ul li {

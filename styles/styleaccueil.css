@@ -1,0 +1,21 @@
+    body {
+        background: url(../images/accueil/1.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .navbar-links li a {
+        color: #fff !important;
+    }
+    
+    .navbar-links li a:hover {
+        color: #8160a7 !important;
+    }
+    
+    .titre {
+        text-align: center;
+        color: #fff;
+        padding: 10%;
+    }
