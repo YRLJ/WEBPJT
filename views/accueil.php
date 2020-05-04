@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-
-    <title>Nom - Accueil</title>
+    <title>CoEd - Accueil</title>
     <link rel="stylesheet" href="./styles/styleaccueil.css">
 
 
@@ -11,20 +10,20 @@
 </head>
 
 <body>
+    <h1 class="titre">CoEd, éducation coopérative.</h1>
+    <p class="baseline">Une plateforme de cours à distance, pensée pour les professeurs et les élèves.
+        <br>Vous avez tout ce qu'il vous faut sous la main.</p>
 
-    
-    <?php if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
-        echo "connecté";
-    } else {
-        //echo "pas connecté";
-        echo "<div class=\"titre\">
-        <h1>Bienvenue sur notre plateforme</h1>
-        <p>Notre but et notre volonté est de donner l'accés à tous les cours à tous types de personnes.</p>
+    <button class="bouton">Découvrir</button>
+
+    <div classe="div1 container">
+        <div class="row">
+            <div class="col align-self-start">
+                <img src="./images/accueil/2.jpg" alt="">
+            </div>
+        </div>
+
     </div>
-     ";
-    }
-    ?>
-
 
 </body>
 
