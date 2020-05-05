@@ -10,6 +10,9 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
         case 'createquiz': //page de création d'un quiz
             include_once './views/quizcreator.php';
             break;
+        case 'quiz':
+            include_once './views/quiz.php';
+            break;
 
         case 'cours':       //page qui affiche tous les cours présent sur le site 
             include_once "./views/cours.php";

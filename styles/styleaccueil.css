@@ -66,15 +66,26 @@ body {
     position: absolute;
     color: black;
     padding-left: 7%;
+    font-family: 'proxima_novaregular';
+    font-size: 3rem;
 }
 
 .txt1_stroke {
     position: relative;
     z-index: 2;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
     color: transparent;
     padding-left: 7%;
+    font-family: 'proxima_novaregular';
+    font-size: 3rem;
+}
+
+#invisible {
+    z-index: 3;
+    font-family: 'proxima_novaregular';
+    margin-left: 590px;
+    margin-top: 200px;
 }
 
 @font-face {
@@ -83,5 +94,4 @@ body {
          url('proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
