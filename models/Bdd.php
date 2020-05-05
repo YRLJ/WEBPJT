@@ -96,6 +96,13 @@ class Bdd
     public function addCourseToAccount($courseid, $username){
         $sql = 'INSERT INTO `usercourses` (`idusercourses`, `score`, `username`, `courseid`) VALUES (NULL, NULL, :username, :courseid)';
     }
+
+    public function addScore($courseid , $score , $username){
+        $sql = "UPDATE usercourses SET score = :score WHERE username = :username AND courseid= :courseid ";
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":score"=>$score,":username"=>$username, ":courseid"=>$courseid ]);
+        
+    }
 }
 
 /*
