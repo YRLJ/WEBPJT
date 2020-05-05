@@ -8,119 +8,161 @@
 </head>
 
 <body>
-    <form id="json">
-        <input type="text" name="Q1.question" />
+    <form class="text-center" id="json">
+        <input type="text" name="Q1.question" placeholder="Question 1" />
         <br>
-        <input type="text" name="Q1.answer1" />
         <br>
-        <input type="text" name="Q1.answer2" />
+        <input type="text" name="Q1.answer1" placeholder="Reponse 1" />
         <br>
-        <input type="text" name="Q1.answer3" />
         <br>
-        <input type="text" name="Q1.rightAnswer" />
+        <input type="text" name="Q1.answer2" placeholder="Reponse2" />
         <br>
-        <input type="text" name="Q2.question" />
         <br>
-        <input type="text" name="Q2.answer1" />
+        <input type="text" name="Q1.answer3" placeholder="Reponse 3" />
         <br>
-        <input type="text" name="Q2.answer2" />
         <br>
-        <input type="text" name="Q2.answer3" />
+        <input type="text" name="Q1.rightAnswer" placeholder="Bonne Reponse" />
         <br>
-        <input type="text" name="Q2.rightAnswer" />
         <br>
-        <input type="text" name="Q3.question" />
+        <input type="text" name="Q2.question" placeholder="Question 2" />
         <br>
-        <input type="text" name="Q3.answer1" />
         <br>
-        <input type="text" name="Q3.answer2" />
+        <input type="text" name="Q2.answer1" placeholder="Reponse 1" />
         <br>
-        <input type="text" name="Q3.answer3" />
         <br>
-        <input type="text" name="Q3.rightAnswer" />
+        <input type="text" name="Q2.answer2" placeholder="Reponse2" />
         <br>
-        <input type="text" name="Q4.question" />
         <br>
-        <input type="text" name="Q4.answer1" />
+        <input type="text" name="Q2.answer3" placeholder="Reponse 3" />
         <br>
-        <input type="text" name="Q4.answer2" />
         <br>
-        <input type="text" name="Q4.answer3" />
+        <input type="text" name="Q2.rightAnswer" placeholder="Bonne Reponse" />
         <br>
-        <input type="text" name="Q4.rightAnswer" />
         <br>
-        <input type="text" name="Q5.question" />
+        <input type="text" name="Q3.question" placeholder="Question 3" />
         <br>
-        <input type="text" name="Q5.answer1" />
         <br>
-        <input type="text" name="Q5.answer2" />
+        <input type="text" name="Q3.answer1"  placeholder="Reponse 1" />
         <br>
-        <input type="text" name="Q5.answer3" />
         <br>
-        <input type="text" name="Q5.rightAnswer" />
+        <input type="text" name="Q3.answer2" placeholder="Reponse 2" />
         <br>
-        <input type="text" name="Q6.question" />
         <br>
-        <input type="text" name="Q6.answer1" />
+        <input type="text" name="Q3.answer3" placeholder="Reponse 3" />
         <br>
-        <input type="text" name="Q6.answer2" />
         <br>
-        <input type="text" name="Q6.answer3" />
+        <input type="text" name="Q3.rightAnswer" placeholder="Bonne Reponse" />
         <br>
-        <input type="text" name="Q6.rightAnswer" />
         <br>
-        <input type="text" name="Q7.question" />
+        <input type="text" name="Q4.question" placeholder="Question 4" />
         <br>
-        <input type="text" name="Q7.answer1" />
         <br>
-        <input type="text" name="Q7.answer2" />
+        <input type="text" name="Q4.answer1" placeholder="Reponse 1" />
         <br>
-        <input type="text" name="Q7.answer3" />
         <br>
-        <input type="text" name="Q7.rightAnswer" />
+        <input type="text" name="Q4.answer2" placeholder="Reponse 2" />
         <br>
-        <input type="text" name="Q8.question" />
         <br>
-        <input type="text" name="Q8.answer1" />
+        <input type="text" name="Q4.answer3" placeholder="Reponse 3" />
         <br>
-        <input type="text" name="Q8.answer2" />
         <br>
-        <input type="text" name="Q8.answer3" />
+        <input type="text" name="Q4.rightAnswer" placeholder="Bonne reponse"  />
         <br>
-        <input type="text" name="Q8.rightAnswer" />
         <br>
-        <input type="text" name="Q9.question" />
+        <input type="text" name="Q5.question" placeholder="Question 5" />
         <br>
-        <input type="text" name="Q9.answer1" />
         <br>
-        <input type="text" name="Q9.answer2" />
+        <input type="text" name="Q5.answer1" placeholder="Reponse 1" />
         <br>
-        <input type="text" name="Q9.answer3" />
         <br>
-        <input type="text" name="Q9.rightAnswer" />
+        <input type="text" name="Q5.answer2" placeholder="Reponse 2" />
         <br>
-        <input type="text" name="Q10.question" />
         <br>
-        <input type="text" name="Q10.answer1" />
+        <input type="text" name="Q5.answer3" placeholder="Reponse 3" />
         <br>
-        <input type="text" name="Q10.answer2" />
         <br>
-        <input type="text" name="Q10.answer3" />
+        <input type="text" name="Q5.rightAnswer" placeholder="Bonne Reponse" />
         <br>
-        <input type="text" name="Q10.rightAnswer" />
+        <br>
+        <input type="text" name="Q6.question" placeholder="Question 6" />
+        <br>
+        <br>
+        <input type="text" name="Q6.answer1" placeholder="Reponse 1" />
+        <br>
+        <br>
+        <input type="text" name="Q6.answer2" placeholder="Reponse 2" />
+        <br>
+        <br>
+        <input type="text" name="Q6.answer3" placeholder="Reponse 3" />
+        <br>
+        <br>
+        <input type="text" name="Q6.rightAnswer" placeholder="Bonne Reponse" />
+        <br>
+        <br>
+        <input type="text" name="Q7.question" placeholder="Question 7" />
+        <br>
+        <br>
+        <input type="text" name="Q7.answer1" placeholder="Reponse 1" />
+        <br>
+        <br>
+        <input type="text" name="Q7.answer2" placeholder="Reponse 2" />
+        <br>
+        <br>
+        <input type="text" name="Q7.answer3" placeholder="Reponse 3" />
+        <br>
+        <br>
+        <input type="text" name="Q7.rightAnswer" placeholder="Bonne Reponse" />
+        <br>
+        <br>
+        <input type="text" name="Q8.question" placeholder="Question 8" />
+        <br>
+        <br>
+        <input type="text" name="Q8.answer1" placeholder="Reponse 1" />
+        <br>
+        <br>
+        <input type="text" name="Q8.answer2" placeholder="Reponse 2" />
+        <br>
+        <br>
+        <input type="text" name="Q8.answer3" placeholder="Reponse 3" />
+        <br>
+        <br>
+        <input type="text" name="Q8.rightAnswer" placeholder="Bonne Reponse" />
+        <br>
+        <br>
+        <input type="text" name="Q9.question" placeholder="Question 9" />
+        <br>
+        <br>
+        <input type="text" name="Q9.answer1" placeholder="Reponse 1" />
+        <br>
+        <br>
+        <input type="text" name="Q9.answer2" placeholder="Reponse 2" />
+        <br>
+        <br>
+        <input type="text" name="Q9.answer3" placeholder="Reponse 3" />
+        <br>
+        <br>
+        <input type="text" name="Q9.rightAnswer" placeholder="Bonne Reponse" />
+        <br>
+        <br>
+        <input type="text" name="Q10.question" placeholder="Question 10" />
+        <br>
+        <br>
+        <input type="text" name="Q10.answer1" placeholder="Reponse 1" />
+        <br>
+        <br>
+        <input type="text" name="Q10.answer2" placeholder="Reponse 2" />
+        <br>
+        <br>
+        <input type="text" name="Q10.answer3" placeholder="Reponse 3" />
+        <br>
+        <br>
+        <input type="text" name="Q10.rightAnswer" placeholder="Bonne Reponse" />
+        <br>
         <br>
     </form>
     <button id="getDataBtn">Get JSON Data</button>
     <script>
-        function createName() {
-            let letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-            let title;
-            for (let i = 0; i < 10; i++) {
-                title += letters[Math.floor(Math.random() * letters.length())];
-            }
-            return title;
-
-        }
+        
         const generateObj = (obj, arr, val) => {
             if (arr.length === 1) {
                 obj[arr[0]] = val;
@@ -148,18 +190,37 @@
                 const splitName = name.split('.');
                 generateObj(data, splitName, value);
             })
+            
 
             return data;
         }
 
         const getDataBtn = document.getElementById('getDataBtn');
         getDataBtn.addEventListener('click', () => {
-            const data = getData('json');
-            console.log(data);
-           /* $.post("./views/quizcreator.php",() => {
-                console.log(data);
+            const quiz = getData('json');
+            console.log(quiz);
+           /* $.ajax({
+                url: './controller/handlequiz.php',
+                type: 'post',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function(){
+                    alert("success");
 
+                },
+
+                data: JSON.stringify(quiz)
             });*/
+            fetch("./controller/handlequiz.php",{
+                method: 'post',
+                body: JSON.stringify(quiz)
+            })
+            .then((response) => {
+              console.log(response);
+
+            })
+            
+                
         })
     </script>
     <?php

@@ -83,6 +83,8 @@ class Bdd
         $var = $this->connexion->prepare($sql);
         $var->execute([":courseid" => $courseid]);
     }
+
+  
 }
 
 /*

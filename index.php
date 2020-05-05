@@ -10,6 +10,9 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
         case 'createquiz': //page de création d'un quiz
             include_once './views/quizcreator.php';
             break;
+        case 'quiz':
+            include_once './views/quiz.php';
+            break;
 
         case 'cours':       //page qui affiche tous les cours présent sur le site 
             include_once "./views/cours.php";
@@ -58,8 +61,8 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
 
         case "proposercours":       //l'utilisateur veut proposer un cours
             if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {    //on vérifie qu'il soit bien connecté 
-            include_once './views/proposer_cours.php';      //on lui affiche alors la page pour proposer un cours
-            }else{      //il n'est pas connecté 
+                include_once './views/proposer_cours.php';      //on lui affiche alors la page pour proposer un cours
+            } else {      //il n'est pas connecté 
                 header('location: ../WEBPJT/index.php?page=login');     //donc on renvoit l'utilisateur vers la page de login
             }
             break;
@@ -67,7 +70,7 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
         case "administrateur":      //l'utilisateur veut se connecter au dashboard administrateur
             if ($_SESSION['type'] == "admin") {     //on vérifie qu'il soit bien admin
                 include_once './views/administrateur.php';      //et donc on lui affiche le dashboard
-            }else{  //sinon on le ramène à l'accueil
+            } else {  //sinon on le ramène à l'accueil
                 header('location: ../WEBPJT/index.php');
             }
             break;
