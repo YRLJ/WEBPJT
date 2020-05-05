@@ -44,44 +44,42 @@ class Bdd
         ]);
     }
 
-    public function getCourses(){       //fonction qui récupère tous les cours présent dans la BDD
+    public function getCourses()
+    {       //fonction qui récupère tous les cours présent dans la BDD
         $sql = 'SELECT * FROM courses';
         $var = $this->connexion->prepare(($sql));
         $var->execute();
-        $courses=$var->fetchAll(PDO::FETCH_ASSOC);
+        $courses = $var->fetchAll(PDO::FETCH_ASSOC);
         return $courses;
     }
 
-    public function getAccountIdCourses($username){         //fonction qui récupère les cours suivit par un compte
+    public function getAccountIdCourses($username)
+    {         //fonction qui récupère les cours suivit par un compte
         $sql = 'SELECT courseid FROM usercourses WHERE username = :username';
         $var = $this->connexion->prepare($sql);
-        $var->execute([":username"=>$username]);
+        $var->execute([":username" => $username]);
         $idcourses = $var->fetchAll(PDO::FETCH_ASSOC);
         return $idcourses;
     }
 
-    public function getCourseById($id){         //fonction qui récupère un cours grâce à son ID
+    public function getCourseById($id)
+    {         //fonction qui récupère un cours grâce à son ID
         $sql = 'SELECT * FROM courses where courseid = :id';
         $var = $this->connexion->prepare($sql);
-        $var->execute([":id"=>$id]);
+        $var->execute([":id" => $id]);
         $course = $var->fetch(PDO::FETCH_ASSOC);
         return $course;
     }
 
-    public function deleteCourseWithId($courseid){          //fonction qui supprime un cours avec l'id (ici le cours n'a pas vraiment supprimer il a juste sont valide = delete)
-        
-        $sql='DELETE FROM courses WHERE courseid = :courseid';
+    public function deleteCourseWithId($courseid)
+    {          //fonction qui supprime un cours avec l'id (ici le cours n'a pas vraiment supprimer il a juste sont valide = delete)
+        $sql = 'DELETE FROM courses WHERE courseid = :courseid';
         $var = $this->connexion->prepare($sql);
         $var->execute([':courseid' => $courseid]);
-        /*
-        $sql = 'UPDATE courses
-        SET valide = "delete"
-        WHERE courseid = :courseid';
-        $var = $this->connexion->prepare($sql);
-        $var->execute([":courseid" => $courseid]);*/
     }
 
-    public function valideCourseWithId($courseid){          //fonction qui valide un cours avec l'id, son valide = oui
+    public function valideCourseWithId($courseid)
+    {          //fonction qui valide un cours avec l'id, son valide = oui
         $sql = 'UPDATE courses
         SET valide = "oui"
         WHERE courseid = :courseid';
@@ -89,15 +87,17 @@ class Bdd
         $var->execute([":courseid" => $courseid]);
     }
 
-    public function getUrlQuizWithIdCourse($courseid){      //fonction qui récupère l'url d'un Quizz avec l'id du Quizz
+    public function getUrlQuizWithIdCourse($courseid)
+    {      //fonction qui récupère l'url d'un Quizz avec l'id du Quizz
         $sql = 'SELECT url FROM courses WHERE courseid = :courseid';
         $var = $this->connexion->prepare($sql);
         $var->execute([":courseid" => $courseid]);
-        $urlQuizz=$var->fetch(PDO::FETCH_ASSOC);
+        $urlQuizz = $var->fetch(PDO::FETCH_ASSOC);
         return $urlQuizz;
     }
 
-    public function addCourseToAccount($courseid, $username){       //fonction qui ajoute un cours a un certain compte
+    public function addCourseToAccount($courseid, $username)
+    {       //fonction qui ajoute un cours a un certain compte
         $sql = 'INSERT INTO `usercourses` (`idusercourses`, `score`, `username`, `courseid`) VALUES (NULL, NULL, :username, :courseid)';
         $var = $this->connexion->prepare($sql);
         $var->execute([':username' => $username, ':courseid' => $courseid]);
