@@ -17,9 +17,9 @@
     <button class="bouton">Découvrir</button>
 
     <div classe="div1 container">
-        <div class="row">
-            <div class="col align-self-start">
-                <img src="./images/accueil/2.jpg" alt="">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <img src="./images/accueil/2.jpg" class="image1">
             </div>
         </div>
 
