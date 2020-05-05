@@ -16,7 +16,7 @@
     <h3>Les cours en attente de validation</h3>
 
     <?php
-
+// Dans cette balise on affiche tous les cours qui ont été proposé par des utilisateurs du site et on propose aux administrateurs de les supprimer ou de les valider
     include_once './controller/courseController.php';
     $courses = getAllCourses();
 
@@ -35,21 +35,10 @@
         }
         echo "</div>";
     } else {
-        echo "désole vous n'avez pas de cours dans votre BDD";
+        echo "Aucun cours est en attente de validation.";
     }
 
     ?>
-<!--
-    <div class="coursnotvalide">
-        <div class="cours">
-            <h4>Titre du cours</h4>
-            <p>Sujet du cours</p>
-            <p>Texte du cours</p>
-            <a href="index.php?page=deletecourse&id=">Supprimer le cours</a>
-            <a href="index.php?page=validecourse&id=">Valider le cours</a>
-        </div>
-    </div>
--->
 </body>
 
 </html>

@@ -3,59 +3,41 @@ body h1 {
     text-align: center;
 }
 
-div.touslescours {
-    /* on fixe la largeur à 100% */
-    width: 100%;
+.allcourses {
+    margin: 5%;
 }
 
-div a {
-    /* on enlève les décorations des liens et on les met de la couleur noir du web */
+.allcourses a {
     text-decoration: none;
-    color: var(--black_web);
+    color: black;
 }
 
-div a:hover {
-    /* lors du survol on enleve les decoration et on met les bordure en violet du site*/
-    text-decoration: none;
-    color: var(--black-web);
+.course {
+    /*on met une bordure a tous les cours individuellement*/
+    border: solid 5px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.course:hover {
+    /*on met la bordure en violet lors du survol*/
     border-color: var(--purple_web);
 }
 
-div div.cours {
-    border: solid;
-    border-width: 5px;
-    border-color: var(--black_web);
-    margin: 1%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-div.cours h3 {
-    text-align: left;
-}
-
-div div.cours:hover {
-    border-color: var(--purple_web);
-}
-
-div a div {
-    color: var(--black_web);
+a.add {
+    /* On rend le bouton d'ajout joli */
+    background: linear-gradient(120deg, #3498DB, #8E44AD);
+    color: #fff;
+    padding: 8px;
+    margin: 8px;
     text-decoration: none;
-    padding: 3px;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: right !important;
 }
 
-div.touslescours div#note {
-    text-align: right;
-}
-
-div.tri {
-    overflow: hidden;
-}
-
-div.tri div p {
-    text-align: center;
-}
-
-div.tri div.matieres {
-    text-align: center;
+a.add:hover {
+    /*On fait en sorte d'avoir un effet lors du survol*/
+    background: linear-gradient(120deg, #8E44AD, #3498DB);
+    color: #fff;
 }

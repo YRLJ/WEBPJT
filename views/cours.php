@@ -15,6 +15,7 @@
 <body>
     <br><br><br>
 
+    <!-- Balise PHP qui affiche différents boutons : V1 quand l'utilisateur il lui propose d'ajouter un cours / V2 quand l'utilisateur n'est pas connecté il lui demande de se connecter-->
     <?php
     if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {
         echo "<a href=\"index.php?page=proposercours\" class=\"logbtn\">Proposer un cours</a>";
