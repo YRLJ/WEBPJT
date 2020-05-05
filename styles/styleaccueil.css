@@ -81,6 +81,13 @@ body {
     font-size: 3rem;
 }
 
+#invisible {
+    z-index: 3;
+    font-family: 'proxima_novaregular';
+    margin-left: 590px;
+    margin-top: 200px;
+}
+
 @font-face {
     font-family: 'proxima_novaregular';
     src: url('proximanova-regular-webfont.woff2') format('woff2'),

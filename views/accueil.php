@@ -16,7 +16,7 @@
 
         <div class="div1">
             <div>
-                <img src="./images/accueil/2.jpg" class="image1">
+                <!--<img src="./images/accueil/2.jpg" class="image1">-->
             </div>
             <div>
                 <h2 class="txt1">Travailler à la maison n'a jamais été aussi simple.</h2>
@@ -27,7 +27,7 @@
                 <p id="invisible">
                     - Des cours organisés ;<br>
                     - Utilisable sur toutes les plateformes ;<br>
-                    - Coucou Lémuel
+                    - Lémuel et Jérémy ont bossé dessus et ça ça arrache man
                 </p>
 
             </div>
