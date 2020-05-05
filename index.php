@@ -84,6 +84,14 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
             include_once './controller/courseController.php';       //on ouvre la page courseController qui controle les cours
             valideCourse();     //et on valide le cours
             break;
+
+        case "addcourseaccount":       //un utilisateur veut suivre le cours sur lequel il a cliqué 
+            if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {    //on vérifie qu'il soit bien connecté 
+                include_once './controller/courseController.php';
+            } else {      //il n'est pas connecté 
+                header('location: ../WEBPJT/index.php?page=login');     //donc on renvoit l'utilisateur vers la page de login
+            }
+            break;
     }
 } else {    //le $_GET['page'] n'est pas set alors on affiche la page d'accueil
     include_once "./views/accueil.php";

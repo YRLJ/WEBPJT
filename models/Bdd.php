@@ -85,6 +85,17 @@ class Bdd
     }
 
   
+    public function getUrlQuizWithIdCourse($courseid){
+        $sql = 'SELECT url FROM courses WHERE courseid = :courseid';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":courseid" => $courseid]);
+        $urlQuizz=$var->fetch(PDO::FETCH_ASSOC);
+        return $urlQuizz;
+    }
+
+    public function addCourseToAccount($courseid, $username){
+        $sql = 'INSERT INTO `usercourses` (`idusercourses`, `score`, `username`, `courseid`) VALUES (NULL, NULL, :username, :courseid)';
+    }
 }
 
 /*

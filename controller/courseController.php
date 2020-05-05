@@ -42,3 +42,14 @@ function valideCourse(){            //fonction qui valide un cours et renvoi l'u
     header('location: ../WEBPJT/index.php?page=administrateur');
 
 }
+
+function getUrlQuizWithIdCourse($courseid){
+    $Bdd = new Bdd();
+    $result=$Bdd->getUrlQuizWithIdCourse($courseid);
+    $urlQuiz=$result['url'];
+    return $urlQuiz;
+}
+
+function addCourseToAccount($courseid, $username){
+    $Bdd = new Bdd();
+}
