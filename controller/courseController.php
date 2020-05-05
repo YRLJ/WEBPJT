@@ -49,3 +49,7 @@ function getUrlQuizWithIdCourse($courseid){
     $urlQuiz=$result['url'];
     return $urlQuiz;
 }
+
+function addCourseToAccount($courseid, $username){
+    $Bdd = new Bdd();
+}
