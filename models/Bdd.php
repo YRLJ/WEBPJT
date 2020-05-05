@@ -89,11 +89,11 @@ class Bdd
 
     public function getUrlQuizWithIdCourse($courseid)
     {      //fonction qui récupère l'url d'un Quizz avec l'id du Quizz
-        $sql = 'SELECT url FROM courses WHERE courseid = :courseid';
+        $sql = 'SELECT quiz_url FROM quiz WHERE courseid = :courseid';
         $var = $this->connexion->prepare($sql);
         $var->execute([":courseid" => $courseid]);
-        $urlQuizz = $var->fetch(PDO::FETCH_ASSOC);
-        return $urlQuizz;
+        $urlQuiz = $var->fetch(PDO::FETCH_ASSOC);
+        return $urlQuiz;
     }
 
     public function addCourseToAccount($courseid, $username)

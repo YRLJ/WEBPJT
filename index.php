@@ -18,7 +18,7 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
             include_once "./views/cours.php";
             if ($_SESSION['message'] != null) {     //si on a un message a afficher
                 echo '<script type="text/javascript">window.alert("' . $_SESSION['message'] . '");</script>';
-                $_SESSION['message']=null;  //on le met égale a null pour pas le réafficher
+                $_SESSION['message'] = null;  //on le met égale a null pour pas le réafficher
             }
             break;
 
@@ -97,6 +97,11 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
             } else {      //il n'est pas connecté 
                 header('location: ../WEBPJT/index.php?page=login');     //donc on renvoit l'utilisateur vers la page de login
             }
+            break;
+        case "test":
+            include_once './controller/courseController.php';
+            $url = getUrlQuizWithIdCourse(1);
+            echo $url;
             break;
     }
 } else {    //le $_GET['page'] n'est pas set alors on affiche la page d'accueil
