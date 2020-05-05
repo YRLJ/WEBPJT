@@ -23,12 +23,21 @@
                 <!--<p class="txt1">Toutes les ressources nécessaires concentrées au même endroit.</p>-->
                 <h2 class="txt1_stroke">Travailler à la maison n'a jamais été aussi simple.</h2>
                 <!--<p class="txt1_stroke">Toutes les ressources nécessaires concentrées au même endroit.</p>-->
-                
+                <p id="invisible">Une solution simple d'utilisation, pour faciliter la vie des élèves.</p>
+                <p id="invisible">
+                    - Des cours organisés ;<br>
+                    - Utilisable sur toutes les plateformes ;<br>
+                    - Coucou Lémuel
+                </p>
 
             </div>
 
         </div>
     </div>
+
+    <script>
+
+    </script>
 
 </body>
 
