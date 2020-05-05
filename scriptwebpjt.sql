@@ -1,5 +1,3 @@
-Table structure for table `courses`
---
 
 CREATE TABLE `courses` (
   `courseid` varchar(60) NOT NULL,
