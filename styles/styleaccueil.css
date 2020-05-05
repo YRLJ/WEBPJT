@@ -7,6 +7,9 @@ body {
     position: absolute;
     height: 3000px;
 }
+.corps{
+    overflow: hidden;
+}
     
 .navbar-links li a {
     color: #fff !important;
@@ -15,11 +18,13 @@ body {
 .navbar-links li a:hover {
     color: #8160a7 !important;
 }
-    
+
 .titre {
+    padding-top: 10%;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 5px #000000;
+    font-size: 4rem;
 }
 
 .baseline {
@@ -38,14 +43,45 @@ body {
     margin-right: auto;
     width: 130px;
     margin-top: 130px;
-}
-
-.div1 {
-    margin-top: 200px;
+    
 }
 
 .image1 {
-    height: 400px;
     width: auto;
+    height: 700px;
+    position: absolute;
+}
+
+.div1 {
+    padding-top: 290px;
+    margin-left: 5%;
     position: relative;
+    height: 1000px;
+    width: 100%;
+    z-index: 1;
+}
+
+.txt1 {
+    z-index: -1;
+    position: absolute;
+    color: black;
+    padding-left: 7%;
+}
+
+.txt1_stroke {
+    position: relative;
+    z-index: 2;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    padding-left: 7%;
+}
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('proximanova-regular-webfont.woff2') format('woff2'),
+         url('proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
