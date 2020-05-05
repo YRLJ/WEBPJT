@@ -2,10 +2,6 @@ body h1 {
     text-align: center;
 }
 
-body {
-    overflow: hidden;
-}
-
 div.touslescours {
     width: 100%;
 }

@@ -26,6 +26,8 @@
 
     <h1>Tous nos cours</h1>
 
+    <!-- Lémuel a mis en commentaire le formulaire ci dessous car pas encore développé-->
+<!--
     <div class="tri row">
         <div class="col-2"></div>
         <div class="matieres col-8">
@@ -71,7 +73,7 @@
         </div>
         <div class="col-2 col-lg-4"></div>
     </div>
-
+-->
 
     <?php
 

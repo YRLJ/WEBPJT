@@ -28,11 +28,13 @@ footer div div ul li a:hover {
 }
 
 footer div div ul li a img {
+    /* on fixe la taille des images des reseaux sociaux présent dans la navbar */
     width: 25px;
     padding-right: 1%;
 }
 
 #first {
+    /* on modifie le premier élement de la liste pour qu'il soit plus grand et d'une couleur différentes.*/
     font-size: 22px;
     color: var(--white_web);
 }

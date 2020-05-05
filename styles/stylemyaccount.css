@@ -1,21 +1,25 @@
 body h1 {
+    /* on centre le titre */
     text-align: center;
 }
 
 body {
-    overflow: hidden;
+    /* on cache ce qui dépasse pour pas avoir de mouvement dans la page */
 }
 
 div.touslescours {
+    /* on fixe la largeur à 100% */
     width: 100%;
 }
 
 div a {
+    /* on enlève les décorations des liens et on les met de la couleur noir du web */
     text-decoration: none;
     color: var(--black_web);
 }
 
 div a:hover {
+    /* lors du survol on enleve les decoration et on met les bordure en violet du site*/
     text-decoration: none;
     color: var(--black-web);
     border-color: var(--purple_web);

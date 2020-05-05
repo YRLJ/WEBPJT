@@ -1,8 +1,10 @@
 body h1 {
+    /* On centre le titre de la page*/
     text-align: center;
 }
 
 div.cours {
+    /* On met une bordure à tous les cours et on centre ce qui est dedans*/
     border: solid 3px black;
     padding: 10px;
     margin: 10px;
@@ -10,6 +12,7 @@ div.cours {
 }
 
 div.cours a {
+    /* On rend les boutons de validation et de suppression joli */
     background: linear-gradient(120deg, #3498DB, #8E44AD);
     color: #fff;
     padding: 10px;
