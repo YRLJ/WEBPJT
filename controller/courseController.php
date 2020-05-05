@@ -43,13 +43,26 @@ function valideCourse(){            //fonction qui valide un cours et renvoi l'u
 
 }
 
-function getUrlQuizWithIdCourse($courseid){
+function getUrlQuizWithIdCourse($courseid){     //fonction qui récupère l'url du quiz d'un cours
     $Bdd = new Bdd();
     $result=$Bdd->getUrlQuizWithIdCourse($courseid);
     $urlQuiz=$result['url'];
     return $urlQuiz;
 }
 
-function addCourseToAccount($courseid, $username){
+function addCourseToAccount($courseid){         //fonction qui ajoute un cours a la liste des cours suivit par un compte
     $Bdd = new Bdd();
+    $idcourses = $Bdd->getAccountIdCourses($_SESSION['username']);      //on récupère tous les id des cours que suit déjà un compte
+    $possede=false;     //variable qui nous permettra de savoir si il le possède déjà
+    foreach($idcourses as $idcourse){       //pour chaque cours que possède un compte, on regarde si le cours qui doit être ajouté est déjà possédé
+        if($idcourse['courseid'] == $courseid){
+            $possede=true;      //si il est possédé alors true
+        }
+    }
+    if($possede == false){      //si il n'est pas possédé 
+        $Bdd->addCourseToAccount($courseid, $_SESSION['username']);     //alors on le rajoute dans la BDD
+        $_SESSION['message']=  'Le cours vient d\'être ajouté';     //on met le message dans session pour pouvoir l'afficher en JS a l'utilisateur
+    }else{
+        $_SESSION['message']= 'Le cours a déjà été ajouté';       //l'utilisateur possède déjà le cours donc on lui dit le message avec une popup JS
+    }
 }

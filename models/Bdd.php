@@ -69,11 +69,16 @@ class Bdd
     }
 
     public function deleteCourseWithId($courseid){          //fonction qui supprime un cours avec l'id (ici le cours n'a pas vraiment supprimer il a juste sont valide = delete)
+        
+        $sql='DELETE FROM courses WHERE courseid = :courseid';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([':courseid' => $courseid]);
+        /*
         $sql = 'UPDATE courses
         SET valide = "delete"
         WHERE courseid = :courseid';
         $var = $this->connexion->prepare($sql);
-        $var->execute([":courseid" => $courseid]);
+        $var->execute([":courseid" => $courseid]);*/
     }
 
     public function valideCourseWithId($courseid){          //fonction qui valide un cours avec l'id, son valide = oui
@@ -84,8 +89,7 @@ class Bdd
         $var->execute([":courseid" => $courseid]);
     }
 
-  
-    public function getUrlQuizWithIdCourse($courseid){
+    public function getUrlQuizWithIdCourse($courseid){      //fonction qui récupère l'url d'un Quizz avec l'id du Quizz
         $sql = 'SELECT url FROM courses WHERE courseid = :courseid';
         $var = $this->connexion->prepare($sql);
         $var->execute([":courseid" => $courseid]);
@@ -93,8 +97,10 @@ class Bdd
         return $urlQuizz;
     }
 
-    public function addCourseToAccount($courseid, $username){
+    public function addCourseToAccount($courseid, $username){       //fonction qui ajoute un cours a un certain compte
         $sql = 'INSERT INTO `usercourses` (`idusercourses`, `score`, `username`, `courseid`) VALUES (NULL, NULL, :username, :courseid)';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([':username' => $username, ':courseid' => $courseid]);
     }
 
     public function addScore($courseid , $score , $username){
