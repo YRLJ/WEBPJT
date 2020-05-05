@@ -3,10 +3,6 @@ body h1 {
     text-align: center;
 }
 
-body {
-    /* on cache ce qui dépasse pour pas avoir de mouvement dans la page */
-}
-
 div.touslescours {
     /* on fixe la largeur à 100% */
     width: 100%;

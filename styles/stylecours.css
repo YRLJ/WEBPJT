@@ -2,60 +2,6 @@ body h1 {
     text-align: center;
 }
 
-div.touslescours {
-    width: 100%;
-}
-
-div a {
-    text-decoration: none;
-    color: var(--black_web);
-}
-
-div a:hover {
-    text-decoration: none;
-    color: var(--black-web);
-    border-color: var(--purple_web);
-}
-
-div div.cours {
-    border: solid;
-    border-width: 5px;
-    border-color: var(--black_web);
-    margin: 1%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-div.cours h3 {
-    text-align: left;
-}
-
-div div.cours:hover {
-    border-color: var(--purple_web);
-}
-
-div a div {
-    color: var(--black_web);
-    text-decoration: none;
-    padding: 3px;
-}
-
-div.touslescours div#note {
-    text-align: right;
-}
-
-div.tri {
-    overflow: hidden;
-}
-
-div.tri div p {
-    text-align: center;
-}
-
-div.tri div.matieres {
-    text-align: center;
-}
-
 .logbtn {
     display: block;
     text-align: center;
@@ -78,4 +24,40 @@ div.tri div.matieres {
     background-position: right;
     color: #fff;
     text-decoration: none;
+}
+
+.allcourses {
+    margin: 5%;
+}
+
+.allcourses a {
+    text-decoration: none;
+    color: black;
+}
+
+.course {
+    border: solid 5px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.course:hover {
+    border-color: var(--purple_web);
+}
+
+a.add {
+    /* On rend les boutons de validation et de suppression joli */
+    background: linear-gradient(120deg, #3498DB, #8E44AD);
+    color: #fff;
+    padding: 8px;
+    margin: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: right !important;
+}
+
+a.add:hover {
+    background: linear-gradient(120deg, #8E44AD, #3498DB);
+    color: #fff;
 }

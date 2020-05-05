@@ -83,6 +83,14 @@ class Bdd
         $var = $this->connexion->prepare($sql);
         $var->execute([":courseid" => $courseid]);
     }
+
+    public function getUrlQuizWithIdCourse($courseid){
+        $sql = 'SELECT url FROM courses WHERE courseid = :courseid';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":courseid" => $courseid]);
+        $urlQuizz=$var->fetch(PDO::FETCH_ASSOC);
+        return $urlQuizz;
+    }
 }
 
 /*
