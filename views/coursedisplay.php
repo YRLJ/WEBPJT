@@ -16,7 +16,8 @@
     include_once './controller/courseController.php';
 
     $course = getCourseById($_GET['id']);
-
+    $UrlQuiz = getUrlQuizWithIdCourse($course['courseid']);
+    
 
 
 
@@ -53,9 +54,9 @@
     <br>
     <br>
     <div class=\"container buttons text-center\">
-        <a href=\"#\" class=\"btn btn-purple\">Previous</a>
-        <a href=\"#\" class=\"btn btn-purple\">Quiz</a>
-        <a href=\"#\" class=\"btn btn-purple\">Next</a>
+        
+        <a href=\"index.php?page=quiz&id=".$course['courseid']."&url=".$UrlQuiz."\" class=\"btn btn-purple\">Quiz</a>
+        
     </div>";
     ?>
     
