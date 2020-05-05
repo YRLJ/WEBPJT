@@ -13,6 +13,10 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
 
         case 'cours':       //page qui affiche tous les cours présent sur le site 
             include_once "./views/cours.php";
+            if ($_SESSION['message'] != null) {     //si on a un message a afficher
+                echo '<script type="text/javascript">window.alert("' . $_SESSION['message'] . '");</script>';
+                $_SESSION['message']=null;  //on le met égale a null pour pas le réafficher
+            }
             break;
 
         case 'coursdisplay':        //page qui affiche un cours en détails
@@ -84,7 +88,9 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
 
         case "addcourseaccount":       //un utilisateur veut suivre le cours sur lequel il a cliqué 
             if (isset($_SESSION['type']) && ($_SESSION['type'] == "admin" || $_SESSION['type'] == "user")) {    //on vérifie qu'il soit bien connecté 
-                include_once './controller/courseController.php';
+                include_once './controller/courseController.php';       //on inclue le controller des cours
+                addCourseToAccount($_GET['id']);
+                header('location: ../WEBPJT/index.php?page=cours');
             } else {      //il n'est pas connecté 
                 header('location: ../WEBPJT/index.php?page=login');     //donc on renvoit l'utilisateur vers la page de login
             }
