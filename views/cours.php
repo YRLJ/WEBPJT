@@ -31,19 +31,19 @@
     <?php
 
     include_once './controller/courseController.php';
-    $courses = getAllCourses();
+    $courses = getAllCourses();     //on recupère tous les cours présent dans la BDD
 
-    if ($courses != null) {
+    if ($courses != null) {     //si il y a des cours
         echo "<div class=\"allcourses\">";
-        foreach ($courses as $course) {
-            if ($course['valide'] == 'oui') {
+        foreach ($courses as $course) {     //on parcours chaque cours avec un forearch
+            if ($course['valide'] == 'oui') {       //si un cours est validé alors on l'affiche
                 echo "<a href=\"index.php?page=coursdisplay&id=".$course['courseid']."\">
                 <div class=\"course\">
                     <h3>".$course['title']."</h3>
                     <p>".$course['subject']."</p>
                     <a class=\"add\" href=\"index.php?page=addcourseaccount&id=".$course['courseid']."\" title=\"Ajouter à mes cours\">Ajouter</a>
                 </div>
-            </a>";
+            </a>";//on donne la possibilité aux utilisateurs d'ajouter le cours aux cours qu'ils suivent (on vérifie qu'ils soient connectés dans index.php)
             }
         }
         echo "</div>";

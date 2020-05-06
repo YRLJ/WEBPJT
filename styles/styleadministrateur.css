@@ -23,5 +23,6 @@ div.cours a {
 }
 
 div.cours a:hover {
+    /* On met un effet lors du survol des boutons supprimer et valider cours*/
     background: linear-gradient(120deg, #8E44AD, #3498DB);
 }

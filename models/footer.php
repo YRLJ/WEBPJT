@@ -12,12 +12,7 @@
     <div class="col-sm-6 col-lg-3">
         <ul>
             <li id="first">Cours</li>
-            <li><a href="">Mathématiques</a></li>
-            <li><a href="">Français</a></li>
-            <li><a href="">Espagnol</a></li>
-            <li><a href="">Allemand</a></li>
-            <li><a href="">Anglais</a></li>
-            <li><a href="">Physique, Chimie</a></li>
+            <li><a href="index.php?page=cours">Tous les cours</a></li>
         </ul>
     </div>
     <div class="col-sm-6 col-lg-3">
