@@ -1,0 +1,21 @@
+.btn-purple{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498DB,#8160A7, #3498DB);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 13%;
+}
+.containertext{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 6%;
+}
+.title{
+    color: #8160A7 ;
+}

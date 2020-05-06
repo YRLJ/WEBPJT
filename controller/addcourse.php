@@ -12,8 +12,12 @@ if(isset($_POST)){
     $imgurl = "./uploads/".$imgurl;
     $bdd->createCourse($imgurl,$title,$content,$subject);
     $course = $bdd->getCourseByTitle($title);
-    $link = "location: index.php?page=createquiz&id=".$course['courseid'];
+    if($course != null){
+    $link = "location: ../index.php?page=createquiz&id=".$course['courseid'];
+    echo $link;
+    print_r($course);
     header($link);
+    }
     
 }
   
