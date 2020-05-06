@@ -46,7 +46,7 @@ function valideCourse(){            //fonction qui valide un cours et renvoi l'u
 function getUrlQuizWithIdCourse($courseid){     //fonction qui récupère l'url du quiz d'un cours
     $Bdd = new Bdd();
     $result=$Bdd->getUrlQuizWithIdCourse($courseid);
-    $urlQuiz=$result['url'];
+    $urlQuiz=$result['quiz_url'];
     return $urlQuiz;
 }
 

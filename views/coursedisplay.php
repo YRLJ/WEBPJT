@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Template</title>
+    <title>Cours</title>
 </head>
 
 <body>

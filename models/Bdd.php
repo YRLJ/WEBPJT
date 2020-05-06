@@ -109,6 +109,12 @@ class Bdd
         $var->execute([":score"=>$score,":username"=>$username, ":courseid"=>$courseid ]);
         
     }
+
+    public function addQuiz($url , $courseid ) {
+        $sql = "INSERT INTO `quiz`(`quiz_url`, `courseid`) VALUES (:url, :courseid)";
+        $var = $this->connexion->prepare($sql);
+        $var->execute([':url' => $url , ":courseid" => $courseid]);
+    }
 }
 
 /*
