@@ -13,9 +13,9 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`courseid`, `subject`, `title`, `content`, `url`, `valide`) VALUES
-(1, 'Explication du principe de Mole', 'Cours de Physique Chimie sur les moles', 'Dans ce cours nous allons vous expliquer ce qu\'est une mole', 'c\'est un url', 'oui'),
-(2, 'test', 'test', 'test', 'test', 'oui'),
-(4, 'uyvhjbn ', 'ygbhjn ', 'uhijkn', 'uhjkn', 'oui');
+(15, 'Espagnol ', 'Présent indicatif - Espagnol - C1', 'Verbes se terminant par -AR comme CANTAR:\r\nles  terminaisons sont : -o,-as,-a,-amos,-áis,-an\r\n\r\n\r\nVerbes se terminant par -ER comme Comer: \r\nles  terminaisons sont :-o,-es,-e,-emos,-éis,-en\r\n\r\n\r\nVerbes se terminant par -IR comme VIVIR\r\n les  terminaisons sont :-o,-es,-e,-imos,-ís,-en\r\n\r\n\r\nAttention !\r\n\r\n\r\nTrois verbes irréguliers :\r\n\r\nPoder=> pouvoir\r\n\r\nyo puedo, tú puedes, él (ella) puede, nosotros podemos, vosotros podéis, ellos (ellas) pueden\r\n\r\nQuerer=> aimer, vouloir\r\n\r\nyo quiero, tú quieres, él (ella) quiere, nosotros queremos, vosotros queréis, ellos (ellas) quieren\r\n\r\nTener=> avoir\r\n\r\nyo tengo, tú tienes, él (ella) tiene, nosotros tenemos, vosotros tenéis, ellos (ellas) tienen', './uploads/Espagnol_presentindicatif.pdf', 'oui'),
+(16, 'React JS', 'Introduction React JS', 'React.js est devenu une référence incontournable pour le développement d\'expériences utilisateurs riches dans le navigateur web, y compris sur mobiles.\r\n\r\nCe cours vise à donner de solides bases sur React.js en explorant l\'ensemble de ses concepts et possibilités, pour faciliter ensuite l\'exploration du très vaste écosystème qui gravite autour.\r\n\r\nNous allons commencer par découvrir les concepts-clés de React.js et par mettre en place un environnement de travail performant. Pas à pas, nous explorerons les fondamentaux du framework avant d\'en dégager les subtilités et la puissance.\r\n\r\nCe cours vise particulièrement à démonter les pièges classiques que rencontrent les débutants - et même certains confirmés - sur React.js, et à mettre en lumière les meilleures pratiques établies chaque fois que possible. C\'est la raison pour laquelle un volet entier sera consacré à la mise en place de tests automatisés des composants React.js.\r\n\r\nPensez à utiliser un IDE pour la réalisation de ce cours, par exemple Visual Studio Code.\r\n', './uploads/React js.pdf', 'oui'),
+(17, 'Cooking', 'Cuisiner comme un chef', 'Dans ce cours vous allez apprendre les temps de cuisson nécessaire pour la cuisson de nombreux aliments de la cuisine française a.k.a la barbac.', './uploads/Cours de cuisson.pdf', 'oui');
 
 -- --------------------------------------------------------
 
@@ -28,6 +28,15 @@ CREATE TABLE `quiz` (
   `quiz_url` varchar(2000) NOT NULL,
   `courseid` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `quiz`
+--
+
+INSERT INTO `quiz` (`idquiz`, `quiz_url`, `courseid`) VALUES
+(8, '../quiz/opzioqnwn5.json', 15),
+(9, '../quiz/uwch0sz9n9.json', 16),
+(10, '../quiz/nrs1xz7bi1.json', 17);
 
 -- --------------------------------------------------------
 
@@ -47,15 +56,7 @@ CREATE TABLE `usercourses` (
 --
 
 INSERT INTO `usercourses` (`idusercourses`, `score`, `username`, `courseid`) VALUES
-(1, 2, 'LemuelFalret', 1),
-(2, 1, 'LemuelFalret', 2),
-(5, NULL, 'YanisFatmi', 4),
-(6, NULL, 'LemuelFalret', 4),
-(11, NULL, 'YanisFatmi', 1),
-(12, NULL, 'YanisFatmi', 2),
-(13, 100, 'Jerome', 1),
-(14, NULL, 'Jerome', 2),
-(15, NULL, 'Jerome', 4);
+(17, NULL, 'Hugomorray', 15);
 
 -- --------------------------------------------------------
 
@@ -76,8 +77,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `firstname`, `lastname`, `password`, `type`) VALUES
-('iygv', 'ezf', 'uyfg', 'iyv', 'user'),
-('JeremyDain', 'Jeremy', 'Dain', 'Jeremy', 'user'),
+('Hugomorray', 'Hugo', 'Honore', 'Hugo', 'user'),
+('JeremyDain', 'Jeremy', 'Dain', 'Jeremy', 'admin'),
 ('Jerome', 'Jerome', 'Jerome', 'Jerome', 'user'),
 ('LemuelFalret', 'Lemuel', 'Falret', 'Lemuel', 'admin'),
 ('YanisFatmi', 'Yanis', 'Fatmi', 'Yanis', 'user');
@@ -121,13 +122,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `courseid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `courseid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `quiz`
+--
+ALTER TABLE `quiz`
+  MODIFY `idquiz` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `usercourses`
 --
 ALTER TABLE `usercourses`
-  MODIFY `idusercourses` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idusercourses` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables
