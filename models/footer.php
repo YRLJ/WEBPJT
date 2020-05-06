@@ -37,9 +37,9 @@
     <div class="col-sm-6 col-lg-3">
         <ul>
             <li id="first">Suivez-nous</li>
-            <li><a href=""><img src="images/logo_facebook_purple.svg">Facebook</a></li>
-            <li><a href=""><img src="images/logo_instagram_purple.svg">Instagram</a></li>
-            <li><a href=""><img src="images/logo_twitter_purple.svg">Twitter</a></li>
+            <li><a href=""><img src="./images/logo/logo_facebook_purple.svg">Facebook</a></li>
+            <li><a href=""><img src="./images/logo/logo_instagram_purple.svg">Instagram</a></li>
+            <li><a href=""><img src="./images/logo/logo_twitter_purple.svg">Twitter</a></li>
         </ul>
     </div>
 </div>
