@@ -31,7 +31,8 @@ body {
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 5px #000000;
-    padding-bottom: 460px;
+    padding-bottom: 200px;
+    font-size: 20px;
 }
 
 .div1 {
@@ -56,7 +57,6 @@ body {
 #invisible {
     font-family: 'proxima_novaregular';
     margin-top: 200px;
-    margin-bottom: 600px;
     margin-left: 640px;
     color: transparent;
     z-index: 4;
@@ -64,7 +64,23 @@ body {
 
 #invisible2 {
     opacity: 0;
-    margin-left: 3%;
+    margin-left: 30px;
+}
+
+.div3 {
+    padding-top: 45%;
+}
+
+.image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt34 {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 3rem;
 }
 
 @font-face {
@@ -73,4 +89,38 @@ body {
          url('proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@media screen and (max-width: 900px){
+    .titre {
+        font-size: 3rem;
+    }
+    .baseline {
+        font-size: 13px;
+    }
+    .txt1 {
+        font-size: 2rem;
+    }
+    .txt34 {
+        font-size: 2rem;
+    }
+    #invisible {
+        margin-left: 40px;
+        padding-top: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .titre {
+        font-size: 2rem;
+    }
+    .baseline {
+        font-size: 9px;
+    }
+    .txt1 {
+        font-size: 1.5rem;
+    }
+    .txt34 {
+        font-size: 1.5rem;
+    }
 }
