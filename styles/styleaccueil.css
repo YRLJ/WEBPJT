@@ -32,20 +32,19 @@ body {
     text-shadow: 2px 2px 5px #000000;
 }
 
-.image1 { 
-    width: auto;
-    height: 700px;
-    position: absolute;
-}
-
 .div1 {
     padding-top: 460px;
-    height: 1000px;
     width: 100%;
+    background: url(../images/accueil/2.png);
+}
+
+.div2 {
+    z-index: -3;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 .txt1 {
-
     color: black;
     font-family: 'proxima_novaregular';
     font-size: 3rem;
@@ -53,7 +52,6 @@ body {
 }
 
 #invisible {
-
     font-family: 'proxima_novaregular';
     margin-left: 590px;
     margin-top: 200px;

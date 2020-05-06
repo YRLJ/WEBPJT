@@ -15,14 +15,15 @@
 
         <div class="div1" onmouseover="apparition()">
             <h2 class="txt1">Travailler à la maison n'a jamais été aussi simple.</h2>
-            <div>
-                <img src="images/accueil/2.jpg" classe="image1">
+            <div class="div2">
+                <img style="height: 100px" src="images/accueil/2.jpg">
             </div>
             <div>
                 <p id="invisible"><span style="font-size: 170%">Une solution simple d'utilisation, <br>pour faciliter la vie des élèves :</span><br>
                     - Des cours organisés ;<br>
                     - Utilisable sur toutes les plateformes ;<br>
-                    - Lémuel et Jérémy ont bossé dessus et ça ça arrache man.
+                    - Lémuel et Jérémy ont bossé dessus et ça ça arrache man<br>
+                      (même si c'est des enfoirés)
                 </p>
             </div>
         </div>
