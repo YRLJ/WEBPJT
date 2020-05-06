@@ -28,8 +28,9 @@
         </div>
 
         <div class="div3">
-            <h2 class="txt34">Trois mots d'ordre pendant cette période :</h2>
-            <img src="images/accueil/3.jpg" style="width: 80%" class="image2">     
+            <h2 class="txt34">Trois mots d'ordre :</h2><br>
+            <img src="images/accueil/3.jpg" style="width: 80%" class="image2"><br><br>
+            <h4 style="text-align: center"><a href="#index.php?page=login" class="coed" style="text-decoration: none">CoEd</a> est là pour vous aider.</h4>    
         </div>
     </div>
     <script>
