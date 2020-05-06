@@ -1,13 +1,25 @@
+body {
+    height: 100vh;
+}
+
+@media (min-height: 1280px) {
+    .tous {
+        padding-bottom: 1000px;
+    }
+}
+
 body h1 {
     /* on centre le titre */
     text-align: center;
 }
 
 .allcourses {
+    /* on met un margin à la div comprenant tous les cours*/
     margin: 5%;
 }
 
 .allcourses a {
+    /* on enleve les décorations des balises a présentes dans la div allcourses*/
     text-decoration: none;
     color: black;
 }

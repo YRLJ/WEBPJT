@@ -1,8 +1,10 @@
 body h1 {
+    /* On met le titre de la page au milieu */
     text-align: center;
 }
 
 .logbtn {
+    /* On donne un joli style au bouton pour proposer des cours*/
     display: block;
     text-align: center;
     width: 130px;
@@ -21,16 +23,19 @@ body h1 {
 }
 
 .logbtn:hover {
+    /* on crée l'animation lors du survol*/
     background-position: right;
     color: #fff;
     text-decoration: none;
 }
 
 .allcourses {
+    /* On donne un margin a la div rassemblant tous les cours*/
     margin: 5%;
 }
 
 .allcourses a {
+    /* On enelve la decorations des balises a */
     text-decoration: none;
     color: black;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nom - Cours</title>
+    <title>CoEd - Tous les cours</title>
     <link rel="stylesheet" href="./styles/stylecours.css">
 </head>
 
@@ -31,19 +31,19 @@
     <?php
 
     include_once './controller/courseController.php';
-    $courses = getAllCourses();
+    $courses = getAllCourses();     //on recupère tous les cours présent dans la BDD
 
-    if ($courses != null) {
+    if ($courses != null) {     //si il y a des cours
         echo "<div class=\"allcourses\">";
-        foreach ($courses as $course) {
-            if ($course['valide'] == 'oui') {
+        foreach ($courses as $course) {     //on parcours chaque cours avec un forearch
+            if ($course['valide'] == 'oui') {       //si un cours est validé alors on l'affiche
                 echo "<a href=\"index.php?page=coursdisplay&id=".$course['courseid']."\">
                 <div class=\"course\">
                     <h3>".$course['title']."</h3>
                     <p>".$course['subject']."</p>
                     <a class=\"add\" href=\"index.php?page=addcourseaccount&id=".$course['courseid']."\" title=\"Ajouter à mes cours\">Ajouter</a>
                 </div>
-            </a>";
+            </a>";//on donne la possibilité aux utilisateurs d'ajouter le cours aux cours qu'ils suivent (on vérifie qu'ils soient connectés dans index.php)
             }
         }
         echo "</div>";

@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon compte</title>
+    <title>CoEd - Mon compte</title>
     <link rel="stylesheet" href="./styles/stylemyaccount.css">
 
 </head>
 
 <body>
+    <div class="tous">
     <h1>Mon compte</h1><!-- Titre de la page-->
 
     <h2>Mes informations</h2><!-- Première partie de la page : les informations du compte -->
@@ -26,7 +27,7 @@
 
     <?php
     include_once './controller/courseController.php';
-    $idcourses = getAllIdAccountCourses();
+    $idcourses = getAllIdAccountCourses();//on récupère tous les cours que suit un compte
     echo "<div class=\"allcourses\">";
     foreach ($idcourses as $idcourse) {
         $course = getCourseById($idcourse['courseid']);
@@ -42,6 +43,7 @@
     echo "</div>";
 
     ?>
+    </div>
 </body>
 
 </html>
