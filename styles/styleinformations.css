@@ -1,0 +1,8 @@
+h1 {
+    text-align: center;
+    color: var( --purple_web);
+}
+
+div.aboutus {
+    margin: 5%;
+}
