@@ -103,7 +103,7 @@ class Bdd
         $var->execute([':username' => $username, ':courseid' => $courseid]);
     }
 
-    public function addScore($courseid , $score , $username){
+    public function addScore($courseid , $score , $username){   //fonction qui ajoute un score à un cours que possède un compte
         $sql = "UPDATE usercourses SET score = :score WHERE username = :username AND courseid= :courseid ";
         $var = $this->connexion->prepare($sql);
         $var->execute([":score"=>$score,":username"=>$username, ":courseid"=>$courseid ]);
