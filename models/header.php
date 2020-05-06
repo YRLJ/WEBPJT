@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Lien pour afficher l'icon dans les onlets sur les navigateurs comme chrome -->
-    <link rel="icon" type="image/png" href="./images/logo/icon_coed.jpg"/>
+    <link rel="icon" type="image/png" href="./images/logo/icon_coed.png"/>
 
 
     <!-- CSS bootstrap-->
