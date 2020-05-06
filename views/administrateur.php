@@ -21,9 +21,11 @@
     $courses = getAllCourses();
 
     if ($courses != null) {
+        $nbrcourses=0;
         echo "<div class=\"coursnotvalide\">";
         foreach ($courses as $course) {
             if ($course['valide'] == 'non') {
+                $nbrcourses++;
                 echo "<div class=\"cours\">
                 <h4>" . $course['title'] . "</h4>
                 <p>" . $course['subject'] . "</p>
@@ -34,6 +36,9 @@
             }
         }
         echo "</div>";
+        if($nbrcourses==0){
+            echo "Aucun cours en attente de validation.";
+        }
     } else {
         echo "Aucun cours est en attente de validation.";
     }

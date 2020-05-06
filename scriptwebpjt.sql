@@ -1,6 +1,6 @@
 
 CREATE TABLE `courses` (
-  `courseid` varchar(60) NOT NULL,
+  `courseid` int(255) NOT NULL,
   `subject` varchar(100) NOT NULL,
   `title` varchar(1000) NOT NULL,
   `content` varchar(2000) NOT NULL,
@@ -13,10 +13,9 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`courseid`, `subject`, `title`, `content`, `url`, `valide`) VALUES
-('1', 'Explication du principe de Mole', 'Cours de Physique Chimie sur les moles', 'Dans ce cours nous allons vous expliquer ce qu\'est une mole', 'c\'est un url', 'oui'),
-('2', 'test', 'test', 'test', 'test', 'oui'),
-('3', 'vyjhb ,kjhg', 'uiogyhbkjy', 'iuykgujhvbn yguhjkbn uyhjb,n', 'uihjkbniuhjkn', 'delete'),
-('4', 'uyvhjbn ', 'ygbhjn ', 'uhijkn', 'uhjkn', 'oui');
+(1, 'Explication du principe de Mole', 'Cours de Physique Chimie sur les moles', 'Dans ce cours nous allons vous expliquer ce qu\'est une mole', 'c\'est un url', 'oui'),
+(2, 'test', 'test', 'test', 'test', 'oui'),
+(4, 'uyvhjbn ', 'ygbhjn ', 'uhijkn', 'uhjkn', 'oui');
 
 -- --------------------------------------------------------
 
@@ -27,7 +26,7 @@ INSERT INTO `courses` (`courseid`, `subject`, `title`, `content`, `url`, `valide
 CREATE TABLE `quiz` (
   `idquiz` int(11) NOT NULL,
   `quiz_url` varchar(2000) NOT NULL,
-  `courseid` varchar(60) NOT NULL
+  `courseid` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -40,7 +39,7 @@ CREATE TABLE `usercourses` (
   `idusercourses` int(255) NOT NULL,
   `score` int(11) DEFAULT NULL,
   `username` varchar(100) NOT NULL,
-  `courseid` varchar(60) NOT NULL
+  `courseid` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -48,11 +47,15 @@ CREATE TABLE `usercourses` (
 --
 
 INSERT INTO `usercourses` (`idusercourses`, `score`, `username`, `courseid`) VALUES
-(1, 2, 'LemuelFalret', '1'),
-(2, 1, 'LemuelFalret', '2'),
-(3, NULL, 'YanisFatmi', '3'),
-(5, NULL, 'YanisFatmi', '4'),
-(6, NULL, 'LemuelFalret', '4');
+(1, 2, 'LemuelFalret', 1),
+(2, 1, 'LemuelFalret', 2),
+(5, NULL, 'YanisFatmi', 4),
+(6, NULL, 'LemuelFalret', 4),
+(11, NULL, 'YanisFatmi', 1),
+(12, NULL, 'YanisFatmi', 2),
+(13, 100, 'Jerome', 1),
+(14, NULL, 'Jerome', 2),
+(15, NULL, 'Jerome', 4);
 
 -- --------------------------------------------------------
 
@@ -75,6 +78,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`username`, `firstname`, `lastname`, `password`, `type`) VALUES
 ('iygv', 'ezf', 'uyfg', 'iyv', 'user'),
 ('JeremyDain', 'Jeremy', 'Dain', 'Jeremy', 'user'),
+('Jerome', 'Jerome', 'Jerome', 'Jerome', 'user'),
 ('LemuelFalret', 'Lemuel', 'Falret', 'Lemuel', 'admin'),
 ('YanisFatmi', 'Yanis', 'Fatmi', 'Yanis', 'user');
 
@@ -101,7 +105,7 @@ ALTER TABLE `quiz`
 ALTER TABLE `usercourses`
   ADD PRIMARY KEY (`idusercourses`),
   ADD KEY `usercourses_users_FK` (`username`),
-  ADD KEY `usercourses_courses0_FK` (`courseid`);
+  ADD KEY `usercourses_courses_FK` (`courseid`);
 
 --
 -- Indexes for table `users`
@@ -114,10 +118,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `courses`
+--
+ALTER TABLE `courses`
+  MODIFY `courseid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `usercourses`
 --
 ALTER TABLE `usercourses`
-  MODIFY `idusercourses` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idusercourses` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
@@ -133,5 +143,5 @@ ALTER TABLE `quiz`
 -- Constraints for table `usercourses`
 --
 ALTER TABLE `usercourses`
-  ADD CONSTRAINT `usercourses_courses0_FK` FOREIGN KEY (`courseid`) REFERENCES `courses` (`courseid`),
+  ADD CONSTRAINT `usercourses_courses_FK` FOREIGN KEY (`courseid`) REFERENCES `courses` (`courseid`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `usercourses_users_FK` FOREIGN KEY (`username`) REFERENCES `users` (`username`);
