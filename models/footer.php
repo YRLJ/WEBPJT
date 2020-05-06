@@ -30,8 +30,9 @@
     </div>
     <div class="col-sm-6 col-lg-3">
         <ul>
-            <li id="first">Contact</li>
-            <li><a href="">Idée ?</a></li>
+            <li id="first">Informations</li>
+            <li><a href="">À propos</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </div>
     <div class="col-sm-6 col-lg-3">
