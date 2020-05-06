@@ -6,6 +6,7 @@
     <title>CoEd - Contact</title>
 </head>
 <body>
-    <h1>Contact</h1>
+    <h1>À propose de nous</h1>
+    <p>CoEd est une plateforme gratuite en ligne qui permet à tous </p>
 </body>
 </html>
