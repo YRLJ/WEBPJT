@@ -1,5 +1,5 @@
 <?php
-include_once "./models/Bdd.php";
+include_once "../models/Bdd.php";
 $json =  file_get_contents('php://input');
 function createName()
 {
@@ -8,14 +8,14 @@ function createName()
     for ($i = 0; $i < 10; $i++) {
         $title = $title . $letters[floor(rand() / getrandmax() * count($letters))];
     }
-    return "../quiz/" . $title . ".json";
+    return "../quiz/".$title . ".json";
 }
 $url = createName();
 $myfile = fopen($url, "w");
 fwrite($myfile, $json);
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-    $Bdd = new Bdd();
-    $Bdd->addQuiz($url,$id);
+$id = $_GET['id'];
+$Bdd = new Bdd();
+$Bdd->addQuiz($url,$id);
+echo $id;
 
-}
+

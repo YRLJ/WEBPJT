@@ -20,6 +20,7 @@
         <br>
         <br>
     </div>
+    
 
     <script>
         //let url = "./quiz/j1il6ukeba.json";
@@ -65,16 +66,19 @@
         //loadQuiz(url,"3232");
     </script>
     <?php
-
-    $url = $_GET['url'];
-    $id = $_GET['id'];
-    $url = "./quiz/" . $url;
-    echo "<script>loadQuiz(\"" . $url . "\",\"" . $id . "\")</script>";
+    if (isset($_GET)) {
+        $url = $_GET['url'];
+        $id = $_GET['id'];
+        $url = "./quiz/".$url;
+        echo "<script> loadQuiz(\"" . $url . "\",\"" . $id . "\") </script>";
+        echo $url , $id ;
+    }
 
 
 
     ?>
 
+    
 </body>
 
 </html>

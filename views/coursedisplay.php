@@ -4,6 +4,7 @@
 <head>
 
     <title>Cours</title>
+    <link rel="stylesheet" href="./styles/styledisplaycourse.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 
 
 
-    echo  "<h1 class=\"text-center\">" .$course['subject'].": ". $course['title'] . " </h1>
+    echo  "<h1 class=\"text-center title\">" .$course['subject'].": ". $course['title'] . " </h1>
     <div class=\"container\">
 
         <div class=\"container course text-center\">
@@ -36,10 +37,12 @@
             echo "<iframe class=\" rounded \" width=\"60%\" height=\"900px\" src=\"" . $course['url'] . "\"></iframe>";
         }
         if ($ext == "mp4" || $ext == "mov" || $ext == "avi") {
-            echo "<video src=\"" . $course['url'] . "\"></video>";
+            echo "<video width=\"600\" height=\"auto\" controls>
+            <source src=\"" . $course['url'] . "\">
+            </video>";
         }
         if ($ext == "jpg" || $ext == "jpeg" || $ext == "png") {
-            echo "<img src=\"" . $course['url'] . "\">";
+            echo "<img width=\"600\" height=\"auto\" src=\"" . $course['url'] . "\">";
         }
     }
     
@@ -48,7 +51,10 @@
     <br>
     <br>
     <div class=\"container rounded text-justify content\">
+        <div class=\"\">
+        <h2 class=\"title\">Contenu:</h2>
         <p>".$course['content']."   </p>
+        </div>
 
     </div>
     <br>
