@@ -16,24 +16,21 @@
         <div class="div1" onmouseover="apparition()">
             <h2 class="txt1">Travailler à la maison n'a jamais été aussi simple.</h2>
             <div>
-                <img style="height: 700px" class="div2" id="invisible2" src="images/accueil/2.jpg">
+                <img style="height: 30%" class="div2" id="invisible2" src="images/accueil/2.jpg">
             </div>
             <div>
                 <p id="invisible"><span style="font-size: 170%">Une solution simple d'utilisation, <br>pour faciliter la vie des élèves :</span><br>
                     - Des cours organisés ;<br>
                     - Utilisable sur toutes les plateformes ;<br>
-                    - Lémuel et Jérémy ont bossé dessus et ça ça arrache man<br>
-                      (même si c'est des enfoirés)
+                    - Lémuel et Jérémy ont bossé dessus et ça ça arrache man !
                 </p>
             </div>
         </div>
 
-        <div class="div2">
-            <div class="conteneur">
-                <span class="txt2">Texte</span>
-                <span class="txt3">Texte</span>
-
-            </div>
+        <div class="div3">
+            <h2 class="txt34">Trois mots d'ordre :</h2><br>
+            <img src="images/accueil/3.jpg" style="width: 80%" class="image2"><br><br>
+            <h4 style="text-align: center"><a href="#index.php?page=login" class="coed" style="text-decoration: none">CoEd</a> est là pour vous aider.</h4>    
         </div>
     </div>
     <script>
