@@ -23,7 +23,7 @@
             <input class="form-control" name="title" type="text" placeholder="title" required>
             <br>
             <h5>Matière</h5>
-            <input class="form-control" name="matiere" type="text" placeholder="matiere" required>
+            <input class="form-control" name="subject" type="text" placeholder="matiere" required>
             <br>
             <h5>Contenu</h5>
             <textarea name="content"></textarea required>

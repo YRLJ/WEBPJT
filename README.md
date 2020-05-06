@@ -2,6 +2,8 @@
 
 MVC.
 
+Il faut augmenter: post_max_size: 800M; et upload-max-filesize: 2000M;
+
 UI GUidelines
 
 [color palette](palette.pdf)
