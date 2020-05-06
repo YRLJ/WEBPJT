@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport">
-    <title>Quiz</title>
+    <title>CoEd - Quiz</title>
     <link rel="stylesheet" href="./styles/stylequiz.css">
 </head>
 

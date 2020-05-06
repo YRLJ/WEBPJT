@@ -70,6 +70,14 @@ class Bdd
         $course = $var->fetch(PDO::FETCH_ASSOC);
         return $course;
     }
+    public function getCourseByTitle($title)
+    {         //fonction qui récupère un cours grâce à son ID
+        $sql = 'SELECT * FROM courses where title = :title';
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":title" => $title]);
+        $course = $var->fetch(PDO::FETCH_ASSOC);
+        return $course;
+    }
 
     public function deleteCourseWithId($courseid)
     {          //fonction qui supprime un cours avec l'id (ici le cours n'a pas vraiment supprimer il a juste sont valide = delete)
@@ -115,6 +123,15 @@ class Bdd
         $var = $this->connexion->prepare($sql);
         $var->execute([':url' => $url , ":courseid" => $courseid]);
     }
+
+    public function createCourse($url , $title , $content , $subject){
+        $valide = "non";
+        $sql = "INSERT INTO `courses`( `subject`, `title`, `content`, `url`, `valide`) VALUES (:subject,:title,:content,:url,:valide)";
+        $var = $this->connexion->prepare($sql);
+        $var->execute([":subject"=>$subject , ":title" => $title , ":content" => $content , ":url" => $url , ":valide" => $valide]);
+    }
+
+   
 }
 
 /*

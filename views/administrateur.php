@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard administrateur</title>
+    <title>CoEd - Dashboard administrateur</title>
     <link rel="stylesheet" href="./styles/styleadministrateur.css">
 
 </head>
@@ -30,9 +30,9 @@
                 <h4>" . $course['title'] . "</h4>
                 <p>" . $course['subject'] . "</p>
                 <p>" . $course['content'] . "</p>
-                <a href=\"index.php?page=deletecourse&id=" . $course['courseid'] . "\">Supprimer le cours</a>       //bouton qui permet de supprimer le cours
-                <a href=\"index.php?page=validecourse&id=" . $course['courseid'] . "\">Valider le cours</a>         //bouton qui permet de valider le cours
-            </div>";
+                <a href=\"index.php?page=deletecourse&id=" . $course['courseid'] . "\">Supprimer le cours</a>
+                <a href=\"index.php?page=validecourse&id=" . $course['courseid'] . "\">Valider le cours</a>
+            </div>";//on met deux boutons (1 bouton de validation et 1 bouton de suppresion) pour gérer les cours
             }
         }
         echo "</div>";
