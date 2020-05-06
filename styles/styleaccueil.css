@@ -5,7 +5,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    height: 3000px;
 }
 .corps{
     overflow: hidden;
@@ -33,59 +32,32 @@ body {
     text-shadow: 2px 2px 5px #000000;
 }
 
-.bouton {
-    border-radius: 35px;
-    border-color: #8160a7;
-    color: #fff;
-    background-color: #8160a7;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 130px;
-    margin-top: 130px;
-    
-}
-
-.image1 {
+.image1 { 
     width: auto;
     height: 700px;
     position: absolute;
 }
 
 .div1 {
-    padding-top: 290px;
-    margin-left: 5%;
-    position: relative;
+    padding-top: 460px;
     height: 1000px;
     width: 100%;
-    z-index: 1;
 }
 
 .txt1 {
-    z-index: -1;
-    position: absolute;
-    color: black;
-    padding-left: 7%;
-    font-family: 'proxima_novaregular';
-    font-size: 3rem;
-}
 
-.txt1_stroke {
-    position: relative;
-    z-index: 2;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    color: transparent;
-    padding-left: 7%;
+    color: black;
     font-family: 'proxima_novaregular';
     font-size: 3rem;
+    text-align: center;
 }
 
 #invisible {
-    z-index: 3;
+
     font-family: 'proxima_novaregular';
     margin-left: 590px;
     margin-top: 200px;
+    color: transparent;
 }
 
 @font-face {
