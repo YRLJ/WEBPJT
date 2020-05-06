@@ -27,14 +27,6 @@
                 </p>
             </div>
         </div>
-
-        <div class="div2">
-            <div class="conteneur">
-                <span class="txt2">Texte</span>
-                <span class="txt3">Texte</span>
-
-            </div>
-        </div>
     </div>
     <script>
         function apparition()
