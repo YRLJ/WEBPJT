@@ -10,7 +10,7 @@
 
 <body>
         <nav class="navbar">
-            <a href="index.php" class="brand-title"><img height="35" witdh="11.7" src="logo.svg"></a>
+            <a href="index.php" class="brand-title"><img height="35" witdh="11.7" src="./images/logo/logo.svg"></a>
             <div class="navbar-links">
                 <ul>
                     <li><a href="index.php?page=cours" title="Cours"><i class="fas fa-book-open fa-2x"></i></a></li>

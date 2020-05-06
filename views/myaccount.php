@@ -26,7 +26,7 @@
 
     <?php
     include_once './controller/courseController.php';
-    $idcourses = getAllIdAccountCourses();
+    $idcourses = getAllIdAccountCourses();//on récupère tous les cours que suit un compte
     echo "<div class=\"allcourses\">";
     foreach ($idcourses as $idcourse) {
         $course = getCourseById($idcourse['courseid']);
