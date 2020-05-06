@@ -13,6 +13,21 @@ body h1 {
     text-align: center;
 }
 
+div.separation {
+    /* On crée un séparateur joli*/
+    height: 10px;
+    background-image: linear-gradient(120deg, #3498db, #8e44AD);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+div.myinfo {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
 .allcourses {
     /* on met un margin à la div comprenant tous les cours*/
     margin: 5%;
