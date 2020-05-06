@@ -10,35 +10,29 @@
     <div class="corps">
         <h1 class="titre">CoEd, éducation coopérative.</h1>
         <p class="baseline">Une plateforme de cours à distance, pensée pour les professeurs et les élèves.
-            <br>Vous avez tout ce qu'il vous faut sous la main.</p>
+            <br>Vous avez tout ce qu'il vous faut sous la main.
+        </p>
 
-        <button class="bouton">Découvrir</button>
-
-        <div class="div1">
+        <div class="div1" onmouseover="apparition()">
+            <h2 class="txt1">Travailler à la maison n'a jamais été aussi simple.</h2>
             <div>
-                <!--<img src="./images/accueil/2.jpg" class="image1">-->
+                <img src="images/accueil/2.jpg" classe="image1">
             </div>
             <div>
-                <h2 class="txt1">Travailler à la maison n'a jamais été aussi simple.</h2>
-                <!--<p class="txt1">Toutes les ressources nécessaires concentrées au même endroit.</p>-->
-                <h2 class="txt1_stroke">Travailler à la maison n'a jamais été aussi simple.</h2>
-                <!--<p class="txt1_stroke">Toutes les ressources nécessaires concentrées au même endroit.</p>-->
-                <p id="invisible">Une solution simple d'utilisation, pour faciliter la vie des élèves.</p>
-                <p id="invisible">
+                <p id="invisible"><span style="font-size: 170%">Une solution simple d'utilisation, <br>pour faciliter la vie des élèves :</span><br>
                     - Des cours organisés ;<br>
                     - Utilisable sur toutes les plateformes ;<br>
-                    - Lémuel et Jérémy ont bossé dessus et ça ça arrache man
+                    - Lémuel et Jérémy ont bossé dessus et ça ça arrache man.
                 </p>
-
             </div>
-
         </div>
     </div>
-
     <script>
-
+        function apparition()
+        {
+            document.getElementById("invisible").style.color = "black";
+            document.getElementById("invisible").style.transitionDuration = "2s";
+        }
     </script>
-
 </body>
-
 </html>
