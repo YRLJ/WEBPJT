@@ -1,11 +1,7 @@
-body {
-    height: 100vh;
-}
-
-@media (min-height: 1280px) {
-    .tous {
-        padding-bottom: 1000px;
-    }
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 85vh;
 }
 
 body h1 {
@@ -25,6 +21,16 @@ div.separation {
 div.myinfo {
     margin-right: 5%;
     margin-left: 5%;
+    margin-top: 3%;
+}
+
+div.myinfo a {
+    color: var(--purple_web);
+}
+
+div.mycourses h2 {
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 3%;
 }
 

@@ -35,13 +35,18 @@
             $idcourses = getAllIdAccountCourses(); //on récupère tous les cours que suit un compte
             echo "<div class=\"allcourses\">";
             foreach ($idcourses as $idcourse) {
-                $course = getCourseById($idcourse['courseid']);
+                $course = getCourseById($idcourse['courseid']); //on récupère le cours grâce à l'ID
                 if ($course['valide'] == "oui") {
                     echo "<a href=\"index.php?page=coursdisplay&id=" . $course['courseid'] . "\">
                 <div class=\"course\">
                     <h3>" . $course['title'] . "</h3>
-                    <p>" . $course['subject'] . "</p>
-                </div>
+                    <p>" . $course['subject'] . "</p>";
+                    if ($idcourse['score'] == null) {
+                        echo "<p>Vous n'avez pas encore fait ce cours</p>";
+                    } else {
+                        echo "<p>Score : " . $idcourse['score'] . "/100</p>";
+                    }
+                    echo "</div>
             </a>";
                 }
             }

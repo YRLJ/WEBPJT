@@ -4,6 +4,12 @@
     text-decoration: none;
 }
 
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 85vh;
+}
+
 body {
     min-height: 100vh;
     background-image: linear-gradient(120deg, #3498db, #8e44AD);

@@ -1,3 +1,9 @@
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 85vh;
+}
+
 h1 {
     text-align: center;
 }

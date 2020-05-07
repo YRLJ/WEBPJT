@@ -3,6 +3,12 @@ body h1 {
     text-align: center;
 }
 
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 85vh;
+}
+
 .logbtn {
     /* On donne un joli style au bouton pour proposer des cours*/
     display: block;
@@ -27,6 +33,15 @@ body h1 {
     background-position: right;
     color: #fff;
     text-decoration: none;
+}
+
+div.separation {
+    /* On crée un séparateur joli*/
+    height: 10px;
+    background-image: linear-gradient(120deg, #3498db, #8e44AD);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
 }
 
 .allcourses {

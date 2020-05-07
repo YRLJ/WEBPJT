@@ -15,6 +15,6 @@ if(isset($_GET['score']) && isset($_GET["id"])){
 
 }
 
-header("location: ../index.php")
+header("location: ../index.php?page=login")
 
 ?>

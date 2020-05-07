@@ -1,5 +1,11 @@
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 85vh;
+}
+
 .containerform {
-    margin:auto;
+    margin: auto;
     width: 60%;
     background-color: whitesmoke;
     margin-top: 5%;
@@ -21,7 +27,8 @@
     margin: auto;
 }
 
-.containerform h1,h5 {
+.containerform h1,
+h5 {
     text-align: center;
     color: #8160A7;
 }
@@ -38,9 +45,9 @@
     cursor: pointer;
     transition: 0.5s;
 }
-.custom-file{
+
+.custom-file {
     width: 50%;
     display: block;
     margin: auto;
-    
 }
