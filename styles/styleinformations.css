@@ -1,0 +1,45 @@
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 85vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.separation {
+    /* On crée un séparateur joli*/
+    height: 10px;
+    background-image: linear-gradient(120deg, #3498db, #8e44AD);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+div.aboutus {
+    /* On décolle des bords la div aboutus*/
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.aboutus img {
+    /* On centre l'image et on la réduit*/
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+}
+
+div.contact {
+    /* On décolle des bords la div contact*/
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.contact a {
+    /* On change de couleur le lien qui permet d'envoyer un mail */
+    color: var(--purple_web);
+}

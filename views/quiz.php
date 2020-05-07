@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>CoEd - Quiz</title>
-    <link rel="stylesheet" href="./styles/stylequiz.css">
+    <link rel="stylesheet" href="./styles/stylequiz.css"><!-- On fait un lien avec le CSS de cette page -->
 </head>
 
 <body>
@@ -26,6 +26,8 @@
         //let url = "./quiz/j1il6ukeba.json";
         //recuperer data depuis le json 
         //name = index+"ans";
+
+        //fonction qui récupere les données du json et importe les 10 questions dans un Array
         function loadQuiz(url, quizid) {
             var QuizData = "";
             fetch(url)
@@ -42,10 +44,11 @@
                     })
                     $("#quiz").append("<br><button class=\" logbtn\" onclick=\"handleSubmit(" + quizid + ")\" type=\"button\">Submit</button>")
 
-
+                    //utilisation d'un map pour voir toutes les questions et les afficher avec un append 
                 })
         }
 
+        //function qui vérifie les reponses et les compares avec les bonnes reponses mises dans le json
         function handleSubmit(quizid) {
             let score = 0;
             for (let i = 0; i < 10; i++) {
@@ -60,18 +63,21 @@
                 }
             }
             score = score * 10;
+            //redirection pour upload du score
             window.location.href = "./controller/scorecontroller.php?score=" + score + "&id=" + quizid;
         }
 
         //loadQuiz(url,"3232");
     </script>
     <?php
+
+    //appel de la fonction
     if (isset($_GET)) {
         $url = $_GET['url'];
         $id = $_GET['id'];
         $url = "./quiz/".$url;
         echo "<script> loadQuiz(\"" . $url . "\",\"" . $id . "\") </script>";
-        echo $url , $id ;
+        //echo $url , $id ;
     }
 
 

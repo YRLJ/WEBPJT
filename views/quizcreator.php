@@ -168,7 +168,7 @@
     <button class="logbtn" id="getDataBtn">Suivant</button>
     </div>
     <script>
-        
+        //creer un objet javascript avec le resultat d'un formulaire en detectant si les objets sont parent ou append.Fonction recurente 
         const generateObj = (obj, arr, val) => {
             if (arr.length === 1) {
                 obj[arr[0]] = val;
@@ -182,6 +182,8 @@
             const restArr = arr.splice(1);
             generateObj(obj[arr[0]], restArr, val);
         }
+
+        //foncion qui récupere les données et formate en json
         const getData = (id) => {
             const form = document.getElementById(id);
             const inputCollection = form.getElementsByTagName('input');
@@ -218,8 +220,9 @@
 
                 data: JSON.stringify(quiz)
             });*/
+            //utilisation de promise préferer a ajax pour avoir plusieur .then 
             console.log(id);
-            let linkToFetch = "./controller/handlequiz.php?id="+id;
+            let linkToFetch = "./controller/handlequiz.php?id="+id; //on passe l'id pour lier le quiz a un cours 
             console.log(linkToFetch);
             fetch(linkToFetch,{
                 method: 'post',

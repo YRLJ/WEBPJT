@@ -98,10 +98,8 @@ if (isset($_GET['page'])) {     //si le $_GET['page'] est set alors on rentre da
                 header('location: ../WEBPJT/index.php?page=login');     //donc on renvoit l'utilisateur vers la page de login
             }
             break;
-        case "test":
-            include_once './controller/courseController.php';
-            $url = getUrlQuizWithIdCourse(1);
-            echo $url;
+        case "informations":
+            include_once './views/informations.php';
             break;
     }
 } else {    //le $_GET['page'] n'est pas set alors on affiche la page d'accueil

@@ -1,16 +1,37 @@
-body {
-    height: 100vh;
-}
-
-@media (min-height: 1280px) {
-    .tous {
-        padding-bottom: 1000px;
-    }
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 85vh;
 }
 
 body h1 {
     /* on centre le titre */
     text-align: center;
+}
+
+div.separation {
+    /* On crée un séparateur joli*/
+    height: 10px;
+    background-image: linear-gradient(120deg, #3498db, #8e44AD);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+div.myinfo {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+div.myinfo a {
+    color: var(--purple_web);
+}
+
+div.mycourses h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
 }
 
 .allcourses {
