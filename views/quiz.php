@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>CoEd - Quiz</title>
-    <link rel="stylesheet" href="./styles/stylequiz.css">
+    <link rel="stylesheet" href="./styles/stylequiz.css"><!-- On fait un lien avec le CSS de cette page -->
 </head>
 
 <body>

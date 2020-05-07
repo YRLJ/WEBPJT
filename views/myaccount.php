@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoEd - Mon compte</title>
-    <link rel="stylesheet" href="./styles/stylemyaccount.css">
+    <link rel="stylesheet" href="./styles/stylemyaccount.css"><!-- On fait un lien avec le CSS de cette page -->
 
 </head>
 
 <body>
-    <div class="tous">
+    <div class="tous"><!-- Div qui permet d'avoir le footer en bas de page meme lorsque la page n'est pas rempli -->
         <h1>Mon compte</h1><!-- Titre de la page-->
 
         <div class="separation"></div><!-- Séparateur titre/page-->

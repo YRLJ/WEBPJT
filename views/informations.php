@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="tous">
+    <div class="tous"><!-- Div qui permet d'avoir le footer en bas de page meme lorsque la page n'est pas rempli -->
         <h1>Informations sur CoEd</h1><!-- Titre page -->
 
         <div class="separation"></div><!-- Séparateur titre/page-->
@@ -23,7 +23,7 @@
         </div>
 
         <div class="contact">
-            <!-- Div à contact -->
+            <!-- Div contact -->
             <h2>Contact</h2>
             <p>Tel. : +33 5 65 50 21 33</p>
             <p>Mail : <a href="mailto:contact@coed.fr">contact@coed.fr</a>
