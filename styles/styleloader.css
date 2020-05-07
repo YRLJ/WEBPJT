@@ -1,17 +1,5 @@
-/*body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(120deg, #3498DB, #8E44AD, #3498DB);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "montserrat", sans-serif;
-}
-
-*/
-
 #loading {
+    /* On place le loader au milieu de la page en position absolute*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,6 +7,7 @@
 }
 
 .loading {
+    /* On donne une taille au loader */
     position: relative;
     width: 200px;
     height: 200px;
@@ -41,11 +30,13 @@
 }
 
 .loading::before {
+    /* On donne des effets de rotations */
     border-top: 10px solid #8E44AD;
     transform: rotate(120deg);
 }
 
 .loading::after {
+    /* On donne des effets de rotations */
     border-top: 10px solid rgb(200, 75, 250);
     transform: rotate(240deg);
 }
@@ -61,12 +52,14 @@
 }
 
 @keyframes a1 {
+    /* on met une rotation au loader */
     to {
         transform: rotate(360deg);
     }
 }
 
 @keyframes a2 {
+    /* on empeche la rotation du texte */
     to {
         transform: rotate(-360deg);
     }

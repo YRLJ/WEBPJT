@@ -19,16 +19,19 @@ div.separation {
 }
 
 div.myinfo {
+    /* on modifie l'emplacement de la div où on trouve les informations sud compte */
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 3%;
 }
 
 div.myinfo a {
+    /* On modifie la couleur du lien */
     color: var(--purple_web);
 }
 
 div.mycourses h2 {
+    /* on modifie l'emplacement du sous-titre */
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 3%;
