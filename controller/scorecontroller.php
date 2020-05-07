@@ -4,7 +4,7 @@ include_once '../models/Bdd.php';
 if( !isset($_SESSION) ){
     session_start();
 }
-
+// upload du score dans la bdd
 if(isset($_GET['score']) && isset($_GET["id"])){
     $score = $_GET['score'];
     $id = $_GET['id'];

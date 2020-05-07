@@ -31,7 +31,7 @@
             <br>";
         if ($course['url'] != null) {
             $split = explode(".", $course['url']);
-
+            //fonction qui récupere l'extension du fichier de cours pour gerer sont affichages dans les cours
             $ext = end($split);
             if ($ext == "pdf") {
                 echo "<iframe class=\" rounded \" width=\"60%\" height=\"900px\" src=\"" . $course['url'] . "\"></iframe>";
