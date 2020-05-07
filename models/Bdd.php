@@ -131,6 +131,8 @@ class Bdd
         $var->execute([":subject"=>$subject , ":title" => $title , ":content" => $content , ":url" => $url , ":valide" => $valide]);
     }
 
+    
+
    
 }
 
