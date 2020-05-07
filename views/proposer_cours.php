@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="tous">
+    <div class="tous"><!-- Div qui permet d'avoir le footer en bas de page meme lorsque la page n'est pas rempli -->
         <div class="container rounded containerform">
             <div class="text-center">
                 <form method="POST" action="./controller/addcourse.php" enctype="multipart/form-data">

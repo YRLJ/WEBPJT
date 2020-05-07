@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="tous">
+    <div class="tous"><!-- Div qui permet d'avoir le footer en bas de page meme lorsque la page n'est pas rempli -->
         <h1>Dashboard administrateur</h1>
 
         <div class="separation"></div><!-- Séparateur titre/page-->

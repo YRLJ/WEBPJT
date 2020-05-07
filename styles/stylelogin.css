@@ -11,21 +11,23 @@
 }
 
 body {
-    min-height: 100vh;
+    /*On met un gradient sur tous le background*/
     background-image: linear-gradient(120deg, #3498db, #8e44AD);
 }
 
 footer {
-    position: relative !important;
     padding: 20px;
 }
 
 section.form-login {
+    /* On empeche les défilement droite gauche de la page avec l'overflow */
     position: relative;
     padding-bottom: 800px;
+    overflow: hidden;
 }
 
 .login-form {
+    /* On fixe la largeur du formulaire et son style */
     width: 360px;
     background: #F1F1F1;
     height: 580px;
@@ -38,17 +40,20 @@ section.form-login {
 }
 
 .login-form h1 {
+    /* On met le titre au centre*/
     text-align: center;
     margin-bottom: 60px;
 }
 
 .txtb {
+    /* On met une bordure juste en bas pour les case du formulaire */
     border-bottom: 2px solid #ADADAD;
     position: relative;
     margin: 30px 0;
 }
 
 .txtb input {
+    /* On modifie l'écriture lors de la saisie dans les boites */
     font-size: 15px;
     color: #333;
     border: none;
@@ -58,6 +63,9 @@ section.form-login {
     padding: 0 50px;
     height: 40px;
 }
+
+
+/* On crée les effets lors du clique dans les boites  */
 
 .txtb span::before {
     content: attr(data-placeholder);
@@ -92,6 +100,7 @@ section.form-login {
 }
 
 .logbtn {
+    /* On donne un joli effet au bouton de submit*/
     display: block;
     width: 100%;
     height: 50px;
@@ -105,19 +114,23 @@ section.form-login {
 }
 
 .logbtn:hover {
+    /* On modifie la position du gradient */
     background-position: right;
 }
 
 .bottom-text {
+    /* On modifie la position du texte */
     margin-top: 60px;
     text-align: center;
     font-size: 13px;
 }
 
 .bottom-text a {
+    /* On met une couleur au lien permettant de se connecter si possède déjà compte */
     color: #8160a7;
 }
 
 .bottom-text a:hover {
+    /* On modifie la couleur lors du survol */
     color: #8E44AD;
 }

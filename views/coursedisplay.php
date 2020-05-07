@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="tous">
+    <div class="tous"><!-- Div qui permet d'avoir le footer en bas de page meme lorsque la page n'est pas rempli -->
         <?php
         if (!isset($_SESSION)) {
             session_start();

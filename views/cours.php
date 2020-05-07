@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoEd - Tous les cours</title>
-    <link rel="stylesheet" href="./styles/stylecours.css">
+    <link rel="stylesheet" href="./styles/stylecours.css"><!-- On fait un lien avec le css pour cette page-->
 </head>
 
 
@@ -13,7 +13,8 @@
 
 
 <body>
-    <div class="tous">
+    <div class="tous"><!-- Div qui permet d'avoir le footer en bas de page meme lorsque la page n'est pas rempli -->
+
         <br><br><br>
 
         <!-- Balise PHP qui affiche différents boutons : V1 quand l'utilisateur il lui propose d'ajouter un cours / V2 quand l'utilisateur n'est pas connecté il lui demande de se connecter-->
@@ -24,6 +25,8 @@
             echo "<a href=\"index.php?page=login\" class=\"logbtn\">Proposer un cours</a>";
         }
         ?>
+
+
         <br><br><br>
 
         <h1>Tous nos cours</h1><!-- Titre page -->
