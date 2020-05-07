@@ -71,7 +71,7 @@
         $id = $_GET['id'];
         $url = "./quiz/".$url;
         echo "<script> loadQuiz(\"" . $url . "\",\"" . $id . "\") </script>";
-        echo $url , $id ;
+        //echo $url , $id ;
     }
 
 

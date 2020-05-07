@@ -55,7 +55,7 @@ class Bdd
 
     public function getAccountIdCourses($username)
     {         //fonction qui récupère les cours suivit par un compte
-        $sql = 'SELECT courseid FROM usercourses WHERE username = :username';
+        $sql = 'SELECT * FROM usercourses WHERE username = :username';
         $var = $this->connexion->prepare($sql);
         $var->execute([":username" => $username]);
         $idcourses = $var->fetchAll(PDO::FETCH_ASSOC);

@@ -3,6 +3,35 @@ body h1 {
     text-align: center;
 }
 
+.tous {
+    /* on fait en sorte que le footer soit en bas de page meme quand la page est vide*/
+    position: relative;
+    min-height: 88vh;
+}
+
+div.separation {
+    /* On crée un séparateur joli*/
+    height: 10px;
+    background-image: linear-gradient(120deg, #3498db, #8e44AD);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+p.decallage {
+    /* On centre les textes */
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+}
+
+div.courseswaiting h3 {
+    /* On décalle des bords le sous-titre*/
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
 div.cours {
     /* On met une bordure à tous les cours et on centre ce qui est dedans*/
     border: solid 3px black;
